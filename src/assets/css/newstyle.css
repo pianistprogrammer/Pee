@@ -1,0 +1,297 @@
+.fixed-head{
+position: fixed;
+background: #fff;
+width: 100%;
+padding: 0px 0px 0px 25px;
+}
+.btn.btn-peexoo {
+    color: #4d4d4d !important;
+    background-color: #ffb503;
+    font-weight: 500 !important;
+}
+.circle{
+    border-radius: 50%;
+    background: transparent;
+    height: 165px;
+    padding-top: 67px;
+    margin-bottom: 20px;
+}
+.circle-black{
+    background: #181818;
+    border:1px solid #979797
+}
+.p-italics{
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4d4d4d;
+}
+.carousel-indicators{
+    bottom: -51px !important
+}
+.prev-bt{
+    position: relative;
+    top: 389px;
+    z-index: 15;
+    left: 45%;
+}
+.next-bt{
+    position: relative;
+    top: 389px;
+    z-index: 15;
+    left: 52%;
+}
+.carousel-indicators li {
+    background: #d8d8d8 !important;
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+.carousel-indicators li.active{
+    background: #333333 !important;
+     
+}
+.post.at-style1 {
+    border-radius: 3px;
+    overflow: hidden;
+}
+.post-details {
+    padding: 20px 15px;
+    position: relative;
+}
+.single-info-block p{
+    color: #4d4d4d !important;
+    font-weight: bold;
+}
+#to-hide{
+    display: none;
+    
+}
+.users-say{
+    font-family: Lora;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffb503;
+}
+.show-special{
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffb503;
+    cursor: pointer;
+}
+.show-icon{
+    color: #ffb503; 
+}
+.fa-x{
+    font-size: 22px;
+}
+.bounce {
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+     
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+.user-box{
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+}
+.user-box p{
+    padding: 30px;
+    font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4d4d4d;
+}
+.user-box-details{
+ padding: 0 0px 30px 30px;
+}
+.user-box-details span{
+    font-weight: 600;
+    color: #4d4d4d;
+    padding-left: 20px;
+    position: relative;
+    top: -13px;
+}
+.pexo-bg{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #ffb400 43%, #ffb503), linear-gradient(to bottom, #ffb503, #ffb503);
+}
+.pexo-bg > .pexo-pad{
+    padding:45px;
+}
+.pexo-pad > p{
+  font-family: Lora;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+#descr{
+    color: #4d4d4d;
+    padding-left: 87px;
+    position: relative;
+    top: -33px;
+    font-weight: normal !important
+}
+.pad-top-20{
+    padding-top: 20px
+}
+.pad-top-30{
+    padding-top: 30px
+}
+.pad-top-40{
+    padding-top: 40px
+}
+.pad-top-50{
+    padding-top: 50px
+}
+.pad-top-60{
+    padding-top: 60px
+}
+#footer-menu {
+    left: 0;
+    z-index: 98;
+    background-color: rgba(249, 249, 249, .98);
+    min-height: 96px;
+    box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, .06);
+    overflow: hidden
+}
+#footer-menu, .is-ios #footer-menu {
+    position: fixed;
+    bottom: 0;
+    transition: all 250ms ease;
+    right: 0;
+}
+#footer-menu a span,
+.menu-title a {
+    position: absolute;
+    text-align: center
+}
+
+.is-not-ios .footer-menu-clear {
+    height: 70px;
+    display: block
+}
+
+.is-not-ios .footer {
+    padding-bottom: 0
+}
+
+.is-not-ios #footer-menu a i {
+    padding-top: 13px
+}
+
+.is-not-ios #footer-menu a span {
+    padding-top: 30px;
+    opacity: .6
+}
+
+#footer-menu a {
+    color: #1f1f1f;
+    float: left;
+    text-align: center
+}
+
+.footer-menu-1-icons a {
+    width: 100%
+}
+
+.footer-menu-2-icons a {
+    width: 50%
+}
+
+.footer-menu-3-icons a {
+    width: 33.3%
+}
+
+.footer-menu-4-icons a {
+    width: 25%
+}
+
+.footer-menu-5-icons a {
+    width: 20%
+}
+
+.footer-menu-6-icons a {
+    width: 16.6666%
+}
+
+#footer-menu a span {
+    left: 0;
+    right: 0;
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 54px;
+}
+
+#footer-menu a i {
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+#footer-menu .active-nav,
+#footer-menu a,
+#footer-menu i,
+#footer-menu span {
+    transition: all .2s ease!important
+}
+
+.footer-menu-hidden {
+    transform: translateY(120px)!important
+}
+
+.footer-menu-style-2#footer-menu span {
+    transform: translateY(70px)
+}
+
+.footer-menu-style-2#footer-menu i {
+    transform: translateY(8px)
+}
+
+.footer-menu-style-2#footer-menu .active-nav i,
+.footer-menu-style-2#footer-menu .active-nav span {
+    transform: translateY(0)
+}
+
+.footer-menu-style-3#footer-menu span {
+    transform: translateY(70px)
+}
+
+.footer-menu-style-3#footer-menu i {
+    transform: translateY(8px)
+}
+
+ 
