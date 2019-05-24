@@ -18,5 +18,31 @@
         position: relative;
         
     }
+    @media only screen and (min-width: 320px) and (max-width: 420px) {
+    .single-info-block {
+        min-height: 225px;
+    }
+    
+     #footer-menu a span {
+        left: 0;
+        right: 0;
+        font-weight: 600;
+        font-size: 11px;
+        padding: 48px 0px 16px 9px;
+    }
+    }
+    @media  (max-width: 480px) {
+    .single-info-block {
+        min-height: 225px;
+    }
+    
+     #footer-menu a span {
+        left: 0;
+        right: 0;
+        font-weight: 600;
+        font-size: 11px;
+        padding: 48px 0px 16px 9px;
+    }
+    }
  </style>
  

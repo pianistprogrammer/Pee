@@ -1,6 +1,17 @@
 "use strict";
 ! function(p) {
     function m() {
+        $(".field-wrapper .field-placeholder").on("click", function () {
+            $(this).closest(".field-wrapper").find("input").focus();
+        });
+        $(".field-wrapper input").on("keyup", function () {
+            var value = $.trim($(this).val());
+            if (value) {
+                $(this).closest(".field-wrapper").addClass("hasValue");
+            } else {
+                $(this).closest(".field-wrapper").removeClass("hasValue");
+            }
+        });
         var e = {
             Android: function() {
                 return navigator.userAgent.match(/Android/i)
@@ -503,10 +514,6 @@
                     p(".info-group").removeClass("isActive"), p(".cart-group").removeClass("isActive")
                 }), p(".xs-sidebar-widget").on("click", function(e) {
                     e.stopPropagation()
-                }), p("body").on("contextmenu", function(e) {
-                    return e.preventDefault(), e.stopPropagation(), !1
-                }), p(document).on("keydown", function(e) {
-                    return !(e.ctrlKey && 85 == e.keyCode || e.ctrlKey && e.shiftKey && 73 == e.keyCode || e.ctrlKey && e.shiftKey && 75 == e.keyCode)
                 }), 0 < p(".insta-feed").length && p(".insta-feed").instaFeed({
                     token: "2367672995.1677ed0.dea7a14501d04cd9982c7a0d23c716dd",
                     photos: 6
@@ -625,19 +632,7 @@
                     }
                 }();
             var i = p(".number-percentage");
-            if (0 < p(".waypoint-tigger").length) new Waypoint({
-                element: document.getElementsByClassName("waypoint-tigger"),
-                handler: function(e) {
-                    i.each(function() {
-                        p(this).animateNumbers(p(this).attr("data-value"), !0, parseInt(p(this).attr("data-animation-duration"), 10));
-                        var e = p(this).attr("data-value");
-                        p(this).closest(".single-skill-bar").find(".skill-track").animate({
-                            width: e + "%"
-                        }, 3500)
-                    })
-                },
-                offset: "50%"
-            });
+            
             p.fn.animateNumbers = function(i, a, o, n) {
                 return this.each(function() {
                     var e = p(this),
@@ -859,135 +854,6 @@
         }), p(window).on("resize", function() {
             y(), v(), g()
         }), 0 < p("#xs-map").length) {
-        google.maps.event.addDomListener(window, "load", function() {
-            var e = {
-                    zoom: 11,
-                    center: new google.maps.LatLng(40.67, -73.94),
-                    styles: [{
-                        featureType: "water",
-                        elementType: "geometry",
-                        stylers: [{
-                            color: "#e9e9e9"
-                        }, {
-                            lightness: 17
-                        }]
-                    }, {
-                        featureType: "landscape",
-                        elementType: "geometry",
-                        stylers: [{
-                            color: "#f5f5f5"
-                        }, {
-                            lightness: 20
-                        }]
-                    }, {
-                        featureType: "road.highway",
-                        elementType: "geometry.fill",
-                        stylers: [{
-                            color: "#ffffff"
-                        }, {
-                            lightness: 17
-                        }]
-                    }, {
-                        featureType: "road.highway",
-                        elementType: "geometry.stroke",
-                        stylers: [{
-                            color: "#ffffff"
-                        }, {
-                            lightness: 29
-                        }, {
-                            weight: .2
-                        }]
-                    }, {
-                        featureType: "road.arterial",
-                        elementType: "geometry",
-                        stylers: [{
-                            color: "#ffffff"
-                        }, {
-                            lightness: 18
-                        }]
-                    }, {
-                        featureType: "road.local",
-                        elementType: "geometry",
-                        stylers: [{
-                            color: "#ffffff"
-                        }, {
-                            lightness: 16
-                        }]
-                    }, {
-                        featureType: "poi",
-                        elementType: "geometry",
-                        stylers: [{
-                            color: "#f5f5f5"
-                        }, {
-                            lightness: 21
-                        }]
-                    }, {
-                        featureType: "poi.park",
-                        elementType: "geometry",
-                        stylers: [{
-                            color: "#dedede"
-                        }, {
-                            lightness: 21
-                        }]
-                    }, {
-                        elementType: "labels.text.stroke",
-                        stylers: [{
-                            visibility: "on"
-                        }, {
-                            color: "#ffffff"
-                        }, {
-                            lightness: 16
-                        }]
-                    }, {
-                        elementType: "labels.text.fill",
-                        stylers: [{
-                            saturation: 36
-                        }, {
-                            color: "#333333"
-                        }, {
-                            lightness: 40
-                        }]
-                    }, {
-                        elementType: "labels.icon",
-                        stylers: [{
-                            visibility: "off"
-                        }]
-                    }, {
-                        featureType: "transit",
-                        elementType: "geometry",
-                        stylers: [{
-                            color: "#f2f2f2"
-                        }, {
-                            lightness: 19
-                        }]
-                    }, {
-                        featureType: "administrative",
-                        elementType: "geometry.fill",
-                        stylers: [{
-                            color: "#fefefe"
-                        }, {
-                            lightness: 20
-                        }]
-                    }, {
-                        featureType: "administrative",
-                        elementType: "geometry.stroke",
-                        stylers: [{
-                            color: "#fefefe"
-                        }, {
-                            lightness: 17
-                        }, {
-                            weight: 1.2
-                        }]
-                    }]
-                },
-                t = document.getElementById("xs-map"),
-                i = new google.maps.Map(t, e);
-            new google.maps.Marker({
-                position: new google.maps.LatLng(40.67, -73.94),
-                icon: "assets/images/map-marker.png",
-                map: i,
-                title: "Agencyfi!"
-            })
-        })
+        
     }
 }(jQuery);

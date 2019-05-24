@@ -1222,7 +1222,29 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 #footer-menu{
     display: none
 }
+.mobile-head{
+    display: none;
+}
+.pr-t {
+    display: none
+}
 @media (max-width: 480px) {
+    .users-say{
+        font-size:26px
+    }
+    .xs_nav-portrait .nav-menus-wrapper{
+        opacity: 0.85 !important;
+        width: 97% !important;
+    }
+    .xs-header.header-style2 .xs-menus .nav-menu>li>a {
+        color: #4d4d4d;
+    }
+    .fixed-head {
+        background: #fff !important;
+    }
+    .mobile-head{
+        display: block;
+    }
     .banner-slider-area{
         margin-top: -25px;
     }
@@ -1246,21 +1268,10 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
     #mobilecarouselExampleIndicators{
         display: block
     }
-    .prev-bt {
-        position: relative;
-        top: 372px;
-        z-index: 15;
-        left: 39%;
-    }
-    .next-bt {
-        position: relative;
-        top: 373px;
-        z-index: 15;
-        left: 53%;
-    }
+    
     .single-info-block {
          
-        min-height: 240px;
+        min-height: 220px;
         
     }
     .agency-section-title.section-title-style2 p {
@@ -1273,8 +1284,9 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         margin-bottom: 40px;
     }
     .agency-section-title .main-title {
-        font-size: 1.55rem;
+        font-size: 36px;
     }
+    
     .agency-filter-wraper .agency-section-title .main-title {
         margin-bottom: 0px;
     }
@@ -1519,7 +1531,40 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
     }
 }
 
-@media (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    .single-info-block {
+        min-height: 225px;
+    }
+     
+    .circle {
+        border-radius: 50%;
+        height: 150px;
+        padding-top: 67px;
+        margin-bottom: 20px;
+    }
+    .agency-section-title.section-title-style2 p {
+        font-size: 16px !important;
+    }
+    .users-say{
+        font-size:26px
+    }
+    .t2 .main-title[data-v-abfb344e] {
+        font-size: 28px !important;
+    }
+    .agency-section-title .main-title {
+        font-size: 36px;
+    }
+    
+    #footer-menu a span {
+        left: 0;
+        right: 0;
+        font-weight: 500;
+        font-size: 11px;
+        padding: 48px 0px 16px 9px;
+    }
+    .single-info-block {
+        min-height: 200px;
+    }
     :root {
         font-size: 12px;
     }

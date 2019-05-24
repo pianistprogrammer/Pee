@@ -3,11 +3,23 @@ import App from './App.vue'
 import router from './router'
 import jQuery from 'jquery'
 import Popper from 'popper.js'
+import VueSweetalert2 from 'vue-sweetalert2';
+import Tooltip from 'vue-directive-tooltip';
+import 'vue-directive-tooltip/css/index.css';
+
 import 'bootstrap'
 const $ = jQuery;
 window.$ = $;
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue)
+Vue.use(VueSweetalert2);
+Vue.use(Tooltip, {
+  delay: 500,
+  placement: 'top',
+  class: 'tooltip-red',
+  triggers: ['hover'],
+  offset: 0
+});
 // css
 import './assets/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.css'

@@ -1,13 +1,14 @@
 .fixed-head{
 position: fixed;
-background: #fff;
+background: #4d4d4d;
 width: 100%;
 padding: 0px 0px 0px 25px;
 }
 .btn.btn-peexoo {
-    color: #4d4d4d !important;
+    color: #4d4d4d ;
     background-color: #ffb503;
     font-weight: 500 !important;
+    box-shadow: none;
 }
 .circle{
     border-radius: 50%;
@@ -33,16 +34,24 @@ padding: 0px 0px 0px 25px;
     bottom: -51px !important
 }
 .prev-bt{
-    position: relative;
-    top: 389px;
+    position: absolute;
+    top: 272pt;
     z-index: 15;
-    left: 45%;
+    left: 46.7%;
+    height: 10px;
+    width: 10px;
 }
 .next-bt{
-    position: relative;
-    top: 389px;
+    position: absolute;
+    top: 272pt;
     z-index: 15;
-    left: 52%;
+    left: 52.5%;
+    height: 10px;
+    width: 10px;
+    
+}
+.prev-bt i.fa ,.next-bt i.fa{
+    font-size:13px
 }
 .carousel-indicators li {
     background: #d8d8d8 !important;
@@ -161,7 +170,7 @@ padding: 0px 0px 0px 25px;
 }
 #descr{
     color: #4d4d4d;
-    padding-left: 87px;
+    padding-left: 83px;
     position: relative;
     top: -33px;
     font-weight: normal !important

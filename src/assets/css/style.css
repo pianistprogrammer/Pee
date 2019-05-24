@@ -236,7 +236,7 @@ button:focus {
 }
 
 .xs-header.header-style2 .xs-menus .nav-menu>li>a {
-    color: #606060
+    color: #fff
 }
 
 .xs-header.header-style2 .xs-menus .nav-menu>li>a .submenu-indicator-chevron {
@@ -3350,7 +3350,7 @@ button:focus {
 
 .xs-footer-section.footer-style3 .footer-top-area {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 100px 0
+    padding: 15px 0
 }
 
 .xs-footer-section.footer-style3 .footer-bottom-area {
@@ -3384,7 +3384,8 @@ button:focus {
 }
 
 .xs-footer-section.footer-style3 .footer-widget .xs-list li a {
-    font-size: 0.8125rem
+    font-size: 0.8125rem;
+    margin: 3px;
 }
 
 .xs-footer-section.footer-style3 .copyright-section p {
@@ -7064,7 +7065,7 @@ blockquote:before {
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    min-height: 314px;
+    min-height: 298px;
     background-color: #f1f1f1
 }
 
@@ -7075,7 +7076,7 @@ blockquote:before {
 }
 
 .single-info-block .info-header {
-    margin-bottom: 25px
+    margin-bottom: 12px
 }
 
 .single-info-block .small {
@@ -9678,7 +9679,7 @@ blockquote:before {
 }
 
 .agency-section-title .main-title {
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 0px;
     font-family: Lora !important;
     font-weight: bold;

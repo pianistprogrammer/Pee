@@ -83,3 +83,9 @@
         </div><!-- .footer-bottom-area END -->
     </footer>
 </template>
+
+<style scoped>
+.xs-list li{
+    font-size: 0.8125rem;
+}
+</style>

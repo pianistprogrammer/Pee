@@ -11,19 +11,20 @@
             </div><!-- .row end -->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <a class="prev-bt" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="fa fa-chevron-circle-left" aria-hidden="true"></span>
+                    <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="next-bt" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                </a>
+              
                 <ol class="carousel-indicators">
+                     
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                     
                 </ol>
+                  <a class="next-bt" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                </a>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
@@ -194,18 +195,13 @@
             
             </div>
             <div id="mobilecarouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <a class="prev-bt" href="#mobilecarouselExampleIndicators" role="button" data-slide="prev">
-                        <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="next-bt" href="#mobilecarouselExampleIndicators" role="button" data-slide="next">
-                            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-                            <span class="sr-only">Next</span>
-                        </a>
+                     
                     <ol class="carousel-indicators">
+                         
                         <li data-target="#mobilecarouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#mobilecarouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#mobilecarouselExampleIndicators" data-slide-to="2"></li>
+                         
                          
                     </ol>
                     <div class="carousel-inner">

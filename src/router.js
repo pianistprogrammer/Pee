@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Photographers from './views/Photographers.vue'
 import Home from './views/Home.vue'
+import Login from './views/Login.vue'
+import Signup from './views/SignUp.vue'
+import Pricing from './views/Pricing.vue'
 
 Vue.use(Router)
 
@@ -10,6 +14,26 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/photographers',
+      name: 'photographers',
+      component: Photographers
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: Signup
+    },
+    {
+      path: '/pricing',
+      name: 'pricing',
+      component: Pricing
     },
     {
       path: '/about',
