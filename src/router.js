@@ -5,6 +5,8 @@ import Home from './views/Home.vue'
 import Login from './views/Login.vue'
 import Signup from './views/SignUp.vue'
 import Pricing from './views/Pricing.vue'
+import Faqs from './views/Faqs.vue'
+
 
 Vue.use(Router)
 
@@ -34,6 +36,11 @@ export default new Router({
       path: '/pricing',
       name: 'pricing',
       component: Pricing
+    },
+    {
+      path: '/faqs',
+      name: 'faqs',
+      component: Faqs
     },
     {
       path: '/about',
