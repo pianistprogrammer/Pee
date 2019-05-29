@@ -214,42 +214,14 @@
             <h3>
                 FAQs
             </h3>
-            <div class="row item-row">
-                <div class="col-6">
+            <div class="row">
+                <div class="col-6" v-for="(faq, key) in Faqs" :key="key">
                     <div class="card faq-card-item">
-                        Billing
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card faq-card-item">
-                        Billing
+                       <router-link class="log" :to="{path: '/faqs/mobile/' + faq.id }">{{faq.title}}</router-link> 
                     </div>
                 </div>
             </div>
-            <div class="row item-row">
-                <div class="col-6">
-                    <div class="card faq-card-item">
-                        Billing
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card faq-card-item">
-                        Billing
-                    </div>
-                </div>
-            </div>
-            <div class="row item-row">
-                <div class="col-6">
-                    <div class="card faq-card-item">
-                        Billing
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="card faq-card-item">
-                        Billing
-                    </div>
-                </div>
-            </div>
+             
         </div>
         <Footer />
         <Menu />
@@ -263,7 +235,34 @@
         name: "faqs",
         data: function () {
             return {
-                isBilling: true, isReg: false
+                isBilling: true, isReg: false,
+                Faqs: [
+                    {
+                        id: 1,
+                        title:"Billing"
+                    },
+                    {   
+                        id:2,
+                        title:"Registration"
+                    },
+                    {
+                        id:3,
+                        title:"Something"
+                    },
+                    {
+                        id:4,
+                        title:"Billing"
+                    },
+                    {
+                        id:5,
+                        title:"Billing"
+                    },
+                    {
+                        id:6,
+                        title:"Billing"
+                    }
+                     
+                ]
             }
         },
         components: {
@@ -302,6 +301,7 @@
         .col-6{
             padding-right: 8px !important;
             padding-left: 8px !important;
+            margin-bottom: 10px
         }
         .for-mobile h3 {
             font-family: Lora;
@@ -324,9 +324,8 @@
             box-shadow: 0 3px 12px -2px rgba(223, 223, 223, 0.5);
             background-color: #ffffff;
         }
-        .item-row{
-            margin-bottom: 10px
-        }
+        
+         
     }
 
     .for-mobile {

@@ -1,4 +1,5 @@
 import Vue from 'vue'
+//import 'mdbvue/build/css/mdb.css';
 import App from './App.vue'
 import router from './router'
 import jQuery from 'jquery'
@@ -6,6 +7,7 @@ import Popper from 'popper.js'
 import VueSweetalert2 from 'vue-sweetalert2';
 import Tooltip from 'vue-directive-tooltip';
 import 'vue-directive-tooltip/css/index.css';
+
 
 import 'bootstrap'
 const $ = jQuery;

@@ -6,6 +6,8 @@ import Login from './views/Login.vue'
 import Signup from './views/SignUp.vue'
 import Pricing from './views/Pricing.vue'
 import Faqs from './views/Faqs.vue'
+import MobileFaqs from './views/MobileFaqs.vue'
+
 
 
 Vue.use(Router)
@@ -41,6 +43,11 @@ export default new Router({
       path: '/faqs',
       name: 'faqs',
       component: Faqs
+    },
+    {
+      path: '/faqs/mobile/:id',
+      name: 'mobilefaqs',
+      component: MobileFaqs
     },
     {
       path: '/about',
