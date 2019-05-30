@@ -7,6 +7,7 @@ import Signup from './views/SignUp.vue'
 import Pricing from './views/Pricing.vue'
 import Faqs from './views/Faqs.vue'
 import MobileFaqs from './views/MobileFaqs.vue'
+import Community from './views/Community.vue'
 
 
 
@@ -50,6 +51,11 @@ export default new Router({
       component: MobileFaqs
     },
     {
+      path: '/community',
+      name: 'community',
+      component: Community
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
@@ -59,3 +65,6 @@ export default new Router({
     }
   ]
 })
+
+
+

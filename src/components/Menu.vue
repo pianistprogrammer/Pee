@@ -1,8 +1,17 @@
 <template>
     <div id="footer-menu" class="footer-menu-3-icons footer-menu-style-1">
-            <a href="#" class="active-nav"><i class="fa fa-home"></i><span>Find Photographers</span></a>
-            <a href="#"><i class="fa fa-camera-retro"></i><span>Find my Photos</span></a>
-            <a href="#"><i class="fa fa-picture-o"></i><span>Explore Photos</span></a>
+            <a href="#" class="active-nav">
+                <img src="../assets/images/photographer.png" alt="">
+                <span>Find Photographers</span>
+            </a>
+            <a href="#">
+                <img src="../assets/images/portrait.png" alt="">
+                <span>Find my Photos</span>
+            </a>
+            <a href="#">
+                 <img src="../assets/images/photo-copy.png" alt="">
+                <span>Explore Photos</span>
+            </a>
             <div class="clear"></div>
     </div>
 </template>
@@ -29,6 +38,10 @@
         font-weight: 600;
         font-size: 11px;
         padding: 48px 0px 16px 9px;
+        }
+    #footer-menu a img{
+        
+        padding-top: 15px !important;
     }
     }
     @media  (max-width: 480px) {

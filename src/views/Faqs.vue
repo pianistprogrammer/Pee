@@ -359,29 +359,7 @@
         margin-top: 60px
     }
 
-    .black-header {
-        height: 300px;
-        width: 100%;
-        text-align: center;
-        opacity: 0.88;
-        background-color: #141414;
-        color: #ffffff;
-        padding-top: 158px;
-        padding-bottom: 65px;
-    }
-
-    .black-header h3 {
-        font-family: Lora;
-        font-size: 36px;
-        font-weight: 700;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: #ffffff;
-    }
-
+   
     #accordion {
         border-left: 1px solid #979797;
     }
@@ -398,10 +376,7 @@
         color: #474747;
     }
 
-    .black-header p {
-        font-size: 16px;
-        font-weight: 400;
-    }
+   
 
     .card-header,
     .card-body {

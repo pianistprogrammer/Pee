@@ -3,7 +3,7 @@
     <PHeader />
     <section class="banner-area-wraper">
       <div class="banner-slider-area">
-       <!-- <Appslider/> -->
+       <Appslider/>
       </div>
       <p class="text-center">
         KELECHI AMADI OBI
@@ -68,6 +68,7 @@
   import Footer from '../components/Footer'
   import Menu from '../components/Menu'
   import Appslider from '../components/App-slider'
+  
  
   export default {
     name: "home",
@@ -77,7 +78,8 @@
       Testimony,
       Footer,
       Menu,
-      Appslider,
+      Appslider
+      
        
     }
    

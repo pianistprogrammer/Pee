@@ -10,6 +10,32 @@ padding: 0px 0px 0px 25px;
     font-weight: 500 !important;
     box-shadow: none;
 }
+.black-header {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.88;
+    background-color: #141414;
+    color: #ffffff;
+    padding-top: 158px;
+    padding-bottom: 65px;
+}
+
+.black-header h3 {
+    font-family: Lora;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.black-header p {
+    font-size: 16px;
+    font-weight: 400;
+}
 .circle{
     border-radius: 50%;
     background: transparent;
@@ -78,6 +104,9 @@ padding: 0px 0px 0px 25px;
 #to-hide{
     display: none;
     
+}
+.banner-area-wraper > p {
+    z-index: 1000 !important;
 }
 .users-say{
     font-family: Lora;

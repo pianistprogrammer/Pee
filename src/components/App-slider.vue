@@ -1,50 +1,49 @@
 <template>
     <div class="">
-        <transition-group name='slide-fade' tag='div'>
-            <div v-for="number in [currentNumber]" :key='number'>
-                <img class="im" :src="currentImage" v-on:mouseover="stopRotation" v-on:mouseout="startRotation" />
-            </div>
-        </transition-group>
+        <mdb-carousel :interval="8000"  >
+            <mdb-carousel-item  v-for="(img, key) in images" :key="key" 
+                img :src='img.url' mask="black-light" :alt='img.alt'>
+            </mdb-carousel-item>
+        </mdb-carousel>
+        
     </div>
 </template>
 <script>
     import axios from 'axios'
+    import { mdbCarousel, mdbCarouselItem, mdbCarouselCaption } from 'mdbvue';
     export default {
         data: function () {
             return {
-                images: ["https://preview.redd.it/70zqhwmqywl21.jpg?width=960&crop=smart&auto=webp&s=160c185171272b7175421ad750c00b66b698abdc",
-                    "https://preview.redd.it/70zqhwmqywl21.jpg?width=960&crop=smart&auto=webp&s=160c185171272b7175421ad750c00b66b698abdc",
-                    "https://preview.redd.it/70zqhwmqywl21.jpg?width=960&crop=smart&auto=webp&s=160c185171272b7175421ad750c00b66b698abdc"],
+                images: [
+                    {
+                        url: "https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg",
+                        alt: "First Slide"
+                    },
+                    {
+                        url: "https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg",
+                        alt: "Second Slide"
+                    },
+                    {
+                        url: "https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg",
+                        alt: "Third Slide"
+                    }
+                ],
                 currentNumber: 0,
                 timer: null
             }
         },
         mounted: function () {
-            this.startRotation();
+            //this.startRotation();
         },
-
+        components:{
+            mdbCarousel,
+            mdbCarouselItem,
+            mdbCarouselCaption
+        },
         methods: {
-            startRotation: function () {
-                this.timer = setInterval(this.next, 5000);
-            },
-
-            stopRotation: function () {
-                clearTimeout(this.timer);
-                this.timer = null;
-            },
-
-            next: function () {
-                this.currentNumber += 1
-            },
-            prev: function () {
-                this.currentNumber -= 1
-            }
+             
         },
-        computed: {
-            currentImage: function () {
-                return this.images[Math.abs(this.currentNumber) % this.images.length];
-            }
-        },
+         
         // created(){
         //     // axios.get('https://jsonplaceholder.typicode.com/photos?_limit=5')
         //     //     .then(res => res.data.forEach((img) => {
