@@ -9,7 +9,7 @@
 
                 <div style="float:right">
                     <router-link class="back" to="/faqs">
-                        << Back to FAQs</router-link> </div> <br> <br>
+                       Back to FAQs</router-link> </div> <br> <br>
 
                             <div class="col-12">
                                 <accordion :panes="panes" material></accordion>
