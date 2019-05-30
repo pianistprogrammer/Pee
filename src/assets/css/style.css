@@ -1668,7 +1668,7 @@ button:focus {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-image: url(../images/welcome/welcome-icon-bg-2.png);
+     
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover
@@ -2296,7 +2296,7 @@ button:focus {
     content: "";
     left: 0;
     width: 100%;
-    background-image: url(../images/banner/shadow.png);
+    
     height: 424px;
     top: calc(100% - 20px);
     background-size: contain;
@@ -2784,11 +2784,7 @@ button:focus {
     margin-bottom: 20px
 }
 
-.review-content .review-image img {
-    -webkit-mask: url(../images/team/shape-mask.png);
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center center
-}
+ 
 
 .review-content .reviewer-bio h5 {
     font-family: "Playfair Display", serif;
@@ -3904,7 +3900,7 @@ button:focus {
 
 .xs-inner-banner:after {
     right: 0;
-    background-image: url(../images/banner/inner-banner-overlay.png);
+    
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right top
@@ -5179,19 +5175,6 @@ button:focus {
     display: inline-block
 }
 
-.count-number:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/progress/spin.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: -1
-}
 
 .spin.count-number {
     visibility: hidden
@@ -5238,18 +5221,7 @@ button:focus {
     padding-bottom: 300px
 }
 
-.single-working-progress:not(:last-child):before {
-    position: absolute;
-    content: "";
-    bottom: 50px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 555px;
-    height: 200px;
-    background-image: url(../images/progress/progress-line.png)
-}
+
 
 .single-working-progress:nth-child(2n)>.row {
     -webkit-box-orient: horizontal;
@@ -8752,7 +8724,7 @@ blockquote:before {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url(../images/client-slider-bg.png);
+     
     background-repeat: no-repeat;
     background-position: center center;
     opacity: .1
@@ -10824,16 +10796,7 @@ blockquote:before {
     color: #1868dd
 }
 
-.product-ribbon {
-    background-image: url(../images/products/ribbon-background.png);
-    color: #FFFFFF;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 44px;
-    height: 44px;
-    text-align: center
-}
+
 
 .product-ribbon .ribbon-title {
     line-height: 37px;
