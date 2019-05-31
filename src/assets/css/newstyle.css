@@ -4,6 +4,21 @@ background: #4d4d4d;
 width: 100%;
 padding: 0px 0px 0px 25px;
 }
+.animated-icon1 span {
+    background: #4d4d4d !important;
+}
+.form-m {
+    margin-top: 25px;
+    padding: 50px 16px;
+    background: #fefbf3;
+}
+.navbar-toggler{
+    float:right ;
+    margin-top: 8px;
+}
+ #navbarSupportedContent{
+    float:left !important
+}
 .btn.btn-peexoo {
     color: #4d4d4d ;
     background-color: #ffb503;

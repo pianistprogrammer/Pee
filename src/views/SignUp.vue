@@ -177,13 +177,6 @@
     a.active {
         background: #ffb503
     }
-
-    .form-m {
-        margin-top: 100px;
-        padding: 50px 16px;
-        background: #fefbf3;
-    }
-
     .text-white {
         color: #fff !important
     }

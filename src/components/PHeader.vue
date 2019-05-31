@@ -2,17 +2,18 @@
     <div>
         <div class="modal fade bd-example-modal-sm" id="signupModal" tabindex="-1" role="dialog"
             aria-labelledby="exampleModalLabel" aria-hidden="true">
-            
+
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                        <i class="fa fa-times close-btn" data-dismiss="modal"></i>
+                    <i class="fa fa-times close-btn" data-dismiss="modal"></i>
                     <div class="row">
                         <div class="col-md-12">
                             <div>
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs nav-justified" role="tablist">
-                                    <li role="presentation" class="active li-m"><a style="margin-left: -8px;" href="#signin" aria-controls="signin"
-                                            role="tab" data-toggle="tab" class="active">Sign in</a></li>
+                                    <li role="presentation" class="active li-m"><a style="margin-left: -8px;"
+                                            href="#signin" aria-controls="signin" role="tab" data-toggle="tab"
+                                            class="active">Sign in</a></li>
                                     <li role="presentation" class="li-m"><a href="#signup" aria-controls="signup"
                                             role="tab" data-toggle="tab">Sign
                                             Up</a></li>
@@ -82,7 +83,7 @@
                                                 <input type="password" name="password" id="">
                                                 <div class="field-placeholder"><span>Password</span></div>
                                             </div>
-                                           
+
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="checkbox">
@@ -129,7 +130,7 @@
                 </div>
             </div>
         </div>
-        <header class="xs-header header-transparent header-style2">
+         <header class="xs-header header-transparent header-style2 desktop">
             <div class=" ">
                 <nav class="xs-menus clearfix fixed-head">
                     <div class="nav-header">
@@ -147,7 +148,7 @@
                             <li><a href="">Explore Photos</a></li>
                             <li><a href="">Find a Photographer</a></li>
                             <li>
-                                <a href="">Find my Photos</a>
+                                <a href="">Find my photos</a>
                             </li>
                             <li><a class="log" data-toggle="modal" data-target="#signupModal" style="color:#b58000">Login or
                                     Register</a></li>
@@ -157,53 +158,65 @@
                 </nav>
             </div><!-- .container END -->
         </header><!-- End header section -->
-        <header class="xs-header header-transparent header-style2 mobile-head">
-                <div class=" ">
-                    <nav class="xs-menus clearfix fixed-head">
-                        <div class="nav-header">
-                            <a class="nav-brand" href="">
-                                <img src="../assets/images/asset-7.png" alt="">
-                            </a>
-                            <div class="nav-toggle"></div>
-                        </div>
-                        <div class="nav-menus-wrapper align-to-right">
-                            <!-- menu list -->
-                            <ul class="nav-menu">
-                                 <li>
-                                <router-link to="/photographers">I am a Photographer</router-link>  
-                            </li>
-                                <li><a href="">Explore Photos</a></li>
-                                <li><a href="">Find a Photographer</a></li>
-                                <li><a href="">Find my Photos</a></li>
-                                  <li>
-                                    <router-link class="log" to="/login">Login</router-link>
-                                </li>
-                                <li>
-                                    <router-link class="log" to="/signup"> Register</router-link>
-                                </li>
-                            </ul>
-    
-                        </div>
-                    </nav>
-                </div><!-- .container END -->
-            </header><!-- End header section -->
+
+        <mdb-container>
+            <!--Navbar-->
+            <mdb-navbar color="amber" class="mt-2 lighten-4 mobile-head" animated animation="1">
+                <!-- Navbar brand -->
+                <mdb-navbar-brand class="left">
+                    <router-link class="" to="/">
+                        <img src="../assets/images/asset-7.png" alt="">
+                    </router-link>
+                    
+                </mdb-navbar-brand>
+                <mdb-navbar-toggler>
+                    <mdb-navbar-nav right>
+                        <mdb-nav-item waves-fixed>
+                            <router-link class="" to="/photographers">I am a Photographer</router-link>
+                        </mdb-nav-item>
+                        <mdb-nav-item href="#" waves-fixed>Explore Photos</mdb-nav-item>
+                        <mdb-nav-item href="#" waves-fixed>Find a Photographer</mdb-nav-item>
+                        <mdb-nav-item href="#" waves-fixed>Find my photos</mdb-nav-item>
+                        <router-link class="log" to="/login">
+                            <mdb-nav-item waves-fixed>Login</mdb-nav-item>
+                        </router-link>
+                        <router-link class="log" to="/signup">
+                            <mdb-nav-item waves-fixed>Register</mdb-nav-item>
+                        </router-link>
+                         
+                    </mdb-navbar-nav>
+                </mdb-navbar-toggler>
+            </mdb-navbar>
+        </mdb-container>
     </div>
 </template>
 <script>
+    import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbContainer, mdbRow, mdbInput, mdbNavbarBrand, mdbIcon } from 'mdbvue';
     export default {
         data: function () {
             return {
-
+                loading: true
             }
         },
-        methods: {
+        components: {
+            mdbNavbar,
+            mdbNavItem,
+            mdbNavbarNav,
+            mdbNavbarToggler,
+            mdbContainer,
+            mdbRow,
+            mdbInput,
+            mdbNavbarBrand,
+            mdbIcon
+        },
 
-        }
     }
 </script>
 
+
 <style scoped>
-    .close-btn{
+
+    .close-btn {
         position: absolute;
         right: -1rem;
         top: -1rem;
@@ -216,24 +229,29 @@
         font-weight: normal;
         padding: 10px 12px;
     }
-    .fa-times{
+
+    .fa-times {
         font-size: 20px;
     }
-    .log{
-        color:#b58000 !important;
+
+    .log {
+        color: #b58000 !important;
         cursor: pointer !important;
     }
+
     .li-m {
         width: 50%;
         padding-top: 15px;
         text-align: center;
         background: #fefbf3;
     }
-    .li-m a{
+
+    .li-m a {
         padding: 18px 108px 22px 77px;
-         
+
     }
-     a.active {
+
+    a.active {
         background: #ffb503
     }
 
@@ -340,32 +358,3 @@
         font-family: 'Montserrat';
     }
 </style>
-
-<script>
-export default {
-    data: function(){
-        return {
-            loading: true
-        }
-    },
-    created(){
-        this.getPageData()
-    },
-    mounted() {
-    if (localStorage.getItem('reloaded')) {
-        // The page was just reloaded. Clear the value from local storage
-        // so that it will reload the next time this page is visited.
-        localStorage.removeItem('reloaded');
-    } else {
-        // Set a flag so that we know not to reload the page twice.
-        localStorage.setItem('reloaded', '1');
-        location.reload();
-    }
-},
-    methods:{
-        getPageData(){
-            this.loading = true
-        }
-    }
-}
-</script>

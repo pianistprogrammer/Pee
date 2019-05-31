@@ -3,7 +3,7 @@
     <Header />
     <section class="banner-area-wraper">
       <div class="banner-slider-area">
-       <!-- <Appslider/> -->
+       <Appslider/>
       </div>
       <p class="text-center">
         KELECHI AMADI OBI

@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <mdb-carousel :interval="8000"  >
+        <mdb-carousel :interval="8000">
             <mdb-carousel-item  v-for="(img, key) in images" :key="key" 
                 img :src='img.url' mask="black-light" :alt='img.alt'>
             </mdb-carousel-item>
