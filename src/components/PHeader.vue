@@ -159,7 +159,7 @@
             </div><!-- .container END -->
         </header><!-- End header section -->
 
-        <mdb-container>
+         
             <!--Navbar-->
             <mdb-navbar color="amber" class="mt-2 lighten-4 mobile-head" animated animation="1">
                 <!-- Navbar brand -->
@@ -187,7 +187,7 @@
                     </mdb-navbar-nav>
                 </mdb-navbar-toggler>
             </mdb-navbar>
-        </mdb-container>
+         
     </div>
 </template>
 <script>
