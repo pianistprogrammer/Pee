@@ -148,7 +148,7 @@
                             <li><a href="">Explore Photos</a></li>
                             <li><a href="">Find a Photographer</a></li>
                             <li>
-                                <a href="">Join the community</a>
+                                <router-link to="/community">Join the community</router-link>  
                             </li>
                             <li><a class="log" data-toggle="modal" data-target="#signupModal" style="color:#b58000">Login or
                                     Register</a></li>
@@ -176,7 +176,9 @@
                         </router-link>
                         <mdb-nav-item href="#" waves-fixed>Explore Photos</mdb-nav-item>
                         <mdb-nav-item href="#" waves-fixed>Find a Photographer</mdb-nav-item>
-                        <mdb-nav-item href="#" waves-fixed>Join the community</mdb-nav-item>
+                        <router-link class="" to="/community">
+                            <mdb-nav-item waves-fixed>Join the community</mdb-nav-item>
+                        </router-link>
                         <router-link class="log" to="/login">
                             <mdb-nav-item waves-fixed>Login</mdb-nav-item>
                         </router-link>

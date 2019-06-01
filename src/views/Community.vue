@@ -54,6 +54,22 @@
             </transition>
 
         </div>
+        <div id="mobile-gallery" class="">
+            <div class="col-6">
+                 <div class="mg-b pics all 2 animation" style="">
+                    <img class="img-fluid" src="../assets/images/left.png" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mg-b pics all 1 animation" style="">
+                    <img class="img-fluid" src="../assets/images/middle-top.png" alt="Card image cap">
+                </div>
+                <div class="mg-b pics all 1 animation" style="">
+                    <img class="img-fluid" src="../assets/images/middle-bottom.png" alt="Card image cap"
+                        style="height: 142px;width: 100%;">
+                </div>
+            </div>
+        </div>
         <section class="xs-section-padding">
             <div class="container">
                 <div class="row">
@@ -102,7 +118,7 @@
                                         </p>
                                     </div>
                                     <div class="col-md-8">
-                                        <img src="../assets/images/group-23-copy.png"
+                                        <img src="../assets/images/grid-image.png"
                                             alt="">
                                     </div>
                                 </div>
@@ -160,27 +176,27 @@
                 </div><!-- .row end -->
                 <div class="row">
                     <div class="row">
-                        <div class="col-md-2 legend-img">
+                        <div class="col-md-2 col-6 legend-img">
                             <img src="../assets/images/kelechi.png" alt="">
                             <h5 class="text-center">Kelechi Amadi Obi</h5>
                         </div>
-                        <div class="col-md-2 legend-img">
+                        <div class="col-md-2 col-6 legend-img">
                             <img src="../assets/images/afroshots.png" alt="">
                             <h5 class="text-center">Afroshots</h5>
                         </div>
-                        <div class="col-md-2 legend-img">
+                        <div class="col-md-2 col-6 legend-img">
                             <img src="../assets/images/kelechi.png" alt="">
                             <h5 class="text-center">Kelechi Amadi Obi</h5>
                         </div>
-                        <div class="col-md-2 legend-img">
+                        <div class="col-md-2 col-6 legend-img">
                             <img src="../assets/images/afroshots.png" alt="">
                             <h5 class="text-center">Afroshots</h5>
                         </div>
-                        <div class="col-md-2 legend-img">
+                        <div class="col-md-2 col-6 legend-img">
                             <img src="../assets/images/kelechi.png" alt="">
                             <h5 class="text-center">Kelechi Amadi Obi</h5>
                         </div>
-                        <div class="col-md-2 legend-img">
+                        <div class="col-md-2 col-6 legend-img">
                             <img src="../assets/images/afroshots.png" alt="">
                             <h5 class="text-center">Afroshots</h5>
                         </div>
@@ -198,23 +214,39 @@
                     </div>
                 </div><!-- .row end -->
                 <div class="row">
-                    <div class="col-md-8 offset-md-2">
+                    <div class="col-md-8 offset-md-2 desktop">
                         <div class="row">
-                            <div class="col-md-4 ">
+                            <div class="col-md-4 col-4 ">
                                 <img class="centered" src="../assets/images/enter.png" alt="">
                                 <h5 class="text-center how-text">Sign up</h5>
                             </div>
-                            <div class="col-md-4 ">
+                            <div class="col-md-4 col-4 ">
                                 <img class="centered"
                                     src="../assets/images/positive-verified-symbol-of-a-clipboard-copy.png" alt="">
                                 <h5 class="text-center how-text">Get Vetted</h5>
                             </div>
-                            <div class="col-md-4 ">
+                            <div class="col-md-4 col-4">
                                 <img class="centered" src="../assets/images/community-1.png" alt="">
                                 <h5 class="text-center how-text">Attend meetups</h5>
                             </div>
                         </div>
 
+                    </div>
+                    <div class="row mobile-steps">
+                        
+                        <div class="col-4 ">
+                            <img class="" src="../assets/images/enter.png" alt="">
+                            <h5 class="text-center how-text">Sign up</h5>
+                        </div>
+                        <div class="col-4 ">
+                            <img class=""
+                                    src="../assets/images/positive-verified-symbol-of-a-clipboard-copy.png" alt="">
+                            <h5 class="text-center how-text">Get Vetted</h5>
+                        </div>
+                        <div class="col-4">
+                            <img class="" src="../assets/images/community-1.png" alt="">
+                            <h5 class="text-center how-text">Attend meetups</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="agency-section-title text-center section-title-style2">
@@ -251,7 +283,6 @@
             </div>
         </section>
         <Footer />
-
         <Menu />
     </div>
 
@@ -402,8 +433,53 @@
         -ms-transform: scale(1);
         transform: scale(1);
     }
-
-    @media (max-width: 450px) {
+    #mobile-gallery{
+        display: none
+    }
+    .mobile-steps{
+        display: none
+    }
+    @media (max-width: 480px) {
+        .black-header p {
+        padding: 10px;
+         
+        }
+        .desktop{
+            display: none
+        }
+        .mobile-steps{
+            display: flex
+        }
+        .legend-img img{
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        .row{
+            margin-right: 0 !important ;
+            margin-left: 0 !important
+        }
+        #gallery{
+            display: none
+        }
+        #mobile-gallery{
+        display: flex;
+        margin-top: 10px;
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+        }
+        .agency-section-title .main-title{
+            font-size: 36px !important;
+            margin-top: 71px;
+            font-weight:700;
+        }
+        .agency-section-title .main-title .main-title-t{
+            font-size: 28px !important;
+            font-weight:700;
+        }
+        .col-6{
+            padding-right: 5px !important;
+            padding-left: 5px !important;
+        }
         .gallery {
             -webkit-column-count: 1;
             -moz-column-count: 1;

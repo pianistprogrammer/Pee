@@ -71,7 +71,6 @@
         },
          data() {
             return {
-                countries: {},
                 registerForm: {
                     email: '',
                     password: '',
