@@ -57,16 +57,16 @@
         <div id="mobile-gallery" class="">
             <div class="col-6">
                  <div class="mg-b pics all 2 animation" style="">
-                    <img class="img-fluid" src="../assets/images/left.png" alt="Card image cap">
+                    <img class="img-fluid" style="height:271px;width:100%" src="../assets/images/left.png" alt="Card image cap">
                 </div>
             </div>
             <div class="col-6">
                 <div class="mg-b pics all 1 animation" style="">
-                    <img class="img-fluid" src="../assets/images/middle-top.png" alt="Card image cap">
+                    <img class="img-fluid" style="height:142px;width:100%" src="../assets/images/middle-top.png" alt="Card image cap">
                 </div>
                 <div class="mg-b pics all 1 animation" style="">
                     <img class="img-fluid" src="../assets/images/middle-bottom.png" alt="Card image cap"
-                        style="height: 142px;width: 100%;">
+                        style="height: 118px;width: 100%;">
                 </div>
             </div>
         </div>
@@ -216,17 +216,17 @@
                 <div class="row">
                     <div class="col-md-8 offset-md-2 desktop">
                         <div class="row">
-                            <div class="col-md-4 col-4 ">
-                                <img class="centered" src="../assets/images/enter.png" alt="">
+                            <div class="col-md-4 ">
+                                <img class="" src="../assets/images/login.svg" alt="">
                                 <h5 class="text-center how-text">Sign up</h5>
                             </div>
-                            <div class="col-md-4 col-4 ">
-                                <img class="centered"
-                                    src="../assets/images/positive-verified-symbol-of-a-clipboard-copy.png" alt="">
+                            <div class="col-md-4 ">
+                                <img class=""
+                                    src="../assets/images/verified.svg" alt="">
                                 <h5 class="text-center how-text">Get Vetted</h5>
                             </div>
-                            <div class="col-md-4 col-4">
-                                <img class="centered" src="../assets/images/community-1.png" alt="">
+                            <div class="col-md-4">
+                                <img class="" src="../assets/images/community.svg" alt="">
                                 <h5 class="text-center how-text">Attend meetups</h5>
                             </div>
                         </div>
@@ -235,16 +235,16 @@
                     <div class="row mobile-steps">
                         
                         <div class="col-4 ">
-                            <img class="" src="../assets/images/enter.png" alt="">
+                            <img class="" src="../assets/images/login.svg" alt="">
                             <h5 class="text-center how-text">Sign up</h5>
                         </div>
                         <div class="col-4 ">
                             <img class=""
-                                    src="../assets/images/positive-verified-symbol-of-a-clipboard-copy.png" alt="">
+                                    src="../assets/images/verified.svg" alt="">
                             <h5 class="text-center how-text">Get Vetted</h5>
                         </div>
                         <div class="col-4">
-                            <img class="" src="../assets/images/community-1.png" alt="">
+                            <img class="" src="../assets/images/community.svg" alt="">
                             <h5 class="text-center how-text">Attend meetups</h5>
                         </div>
                     </div>
@@ -341,6 +341,7 @@
     .how-text {
         font-size: 18px;
         color: #4d4d4d;
+        margin-top: -25px;
     }
 
     .join-com {
@@ -352,11 +353,6 @@
         margin-top: 10px;
         color: #646464;
     }
-
-    .centered {
-        margin-left: 54px;
-    }
-
     .col-md-2 {
         padding-right: 10px !important;
         padding-left: 10px !important;
@@ -440,6 +436,12 @@
         display: none
     }
     @media (max-width: 480px) {
+        .how-works{
+            margin-top:0 !important
+        }
+        .how-text{
+            margin-top: 0px !important;
+        }
         .black-header p {
         padding: 10px;
          
