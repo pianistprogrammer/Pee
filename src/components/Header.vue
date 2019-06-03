@@ -146,7 +146,9 @@
                                 <router-link to="/">I am a Consumer</router-link>  
                             </li>
                             <li><a href="">Explore Photos</a></li>
-                            <li><a href="">Find a Photographer</a></li>
+                            <li>
+                                <router-link to="/photographers/search">Find a Photographer</router-link>  
+                            </li>
                             <li>
                                 <router-link to="/community">Join the community</router-link>  
                             </li>
@@ -175,7 +177,9 @@
                             <mdb-nav-item waves-fixed>I am a consumer</mdb-nav-item>
                         </router-link>
                         <mdb-nav-item href="#" waves-fixed>Explore Photos</mdb-nav-item>
-                        <mdb-nav-item href="#" waves-fixed>Find a Photographer</mdb-nav-item>
+                        <router-link class="" to="/photographers/search">
+                            <mdb-nav-item waves-fixed>Find a Photographer</mdb-nav-item>
+                        </router-link>
                         <router-link class="" to="/community">
                             <mdb-nav-item waves-fixed>Join the community</mdb-nav-item>
                         </router-link>

@@ -1,20 +1,13 @@
 <template>
     <div>
         <PHeader />
-        <div class="black-header">
-            <h3>Join the Community</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
-            <button class="btn btn-p btn-rounded btn-peexoo">Join the Community</button>
-        </div>
+        <CommunityHeader/>
         <div class="gallery mt-3" id="gallery">
             <!-- Grid column -->
 
             <transition @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave">
                 <div class="mg-b pics all 2 animation" style="">
-                    <img class="img-fluid" src="../assets/images/left.png" alt="Card image cap">
+                    <img class="img-fluid" style="width:100%" src="../assets/images/left.png" alt="Card image cap">
                 </div>
             </transition>
             <!-- Grid column -->
@@ -22,7 +15,7 @@
             <!-- Grid column -->
             <transition @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave">
                 <div class="mg-b pics all 1 animation" style="">
-                    <img class="img-fluid" src="../assets/images/middle-top.png" alt="Card image cap">
+                    <img class="img-fluid" style="width:100%" src="../assets/images/middle-top.png" alt="Card image cap">
                 </div>
             </transition>
             <!-- Grid column -->
@@ -40,7 +33,7 @@
             <transition @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave">
                 <div class="mg-b pics all 2 animation" style="">
                     <img class="img-fluid" src="../assets/images/right-top.png" alt="Card image cap"
-                        style="height: 418px;object-fit:cover">
+                        style="height: 418px;width:100%;object-fit:cover">
                 </div>
             </transition>
             <!-- Grid column -->
@@ -49,7 +42,7 @@
             <transition @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave">
                 <div class="mg-b pics all 2 animation" style="">
                     <img class="img-fluid" src="../assets/images/right-bottom.png" alt="Card image cap"
-                        style="height: 213px;object-fit:cover">
+                        style="height: 213px;object-fit:cover;width:100%">
                 </div>
             </transition>
 
@@ -160,7 +153,10 @@
             </div>
                  
                 <div class="agency-section-title text-center section-title-style2">
+                  <router-link class="" to="/community/join">
                     <button class="btn btn-p btn-rounded btn-peexoo">Join now</button>
+                  </router-link>
+                    
                 </div>
             </div><!-- .container END -->
         </section><!-- end business info section -->
@@ -250,7 +246,9 @@
                     </div>
                 </div>
                 <div class="agency-section-title text-center section-title-style2">
-                    <button class="btn btn-p btn-rounded btn-peexoo">Join now</button>
+                     <router-link class="" to="/community/join">
+                        <button class="btn btn-p btn-rounded btn-peexoo">Join now</button>
+                  </router-link>
                 </div>
             </div><!-- .container END -->
         </section>
@@ -292,6 +290,7 @@
     import Footer from '../components/Footer'
     import Menu from '../components/Menu'
     import PhotoTestimony from '../components/Photo-Testimony'
+    import CommunityHeader from '../components/community-header'
     import { mdbContainer, mdbRow, mdbCol, mdbIcon,mdbBtn, mdbLightbox, mdbCarousel, mdbCarouselCaption, mdbCard, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbNavItem } from "mdbvue";
  
 
@@ -302,6 +301,7 @@
             Footer,
             Menu,
             PhotoTestimony,
+            CommunityHeader,
             mdbContainer,
             mdbRow,
             mdbCol,
@@ -366,14 +366,7 @@
         font-size: 48px !important;
     }
 
-    .black-header {
-        height: 475px !important;
-    }
-
-    .black-header p {
-        padding: 10px 350px 10px 350px;
-        font-weight: normal !important
-    }
+   
 
     .big-p {
         padding-bottom: 25px;
@@ -441,10 +434,6 @@
         }
         .how-text{
             margin-top: 0px !important;
-        }
-        .black-header p {
-        padding: 10px;
-         
         }
         .desktop{
             display: none

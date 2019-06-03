@@ -146,7 +146,9 @@
                                 <router-link to="/photographers">I am a Photographer</router-link>  
                             </li>
                             <li><a href="">Explore Photos</a></li>
-                            <li><a href="">Find a Photographer</a></li>
+                            <li>
+                                <router-link to="/photographers/search">Find a Photographer</router-link>  
+                            </li>
                             <li>
                                 <a href="">Find my photos</a>
                             </li>
@@ -161,7 +163,7 @@
 
          
             <!--Navbar-->
-            <mdb-navbar color="amber" class="mt-2 lighten-4 mobile-head" animated animation="1">
+            <mdb-navbar  class="mobile-head" animated animation="1">
                 <!-- Navbar brand -->
                 <mdb-navbar-brand class="left">
                     <router-link class="" to="/">
@@ -175,7 +177,9 @@
                             <router-link class="" to="/photographers">I am a Photographer</router-link>
                         </mdb-nav-item>
                         <mdb-nav-item href="#" waves-fixed>Explore Photos</mdb-nav-item>
-                        <mdb-nav-item href="#" waves-fixed>Find a Photographer</mdb-nav-item>
+                       <router-link class="" to="/photographers/search">
+                            <mdb-nav-item waves-fixed>Find a Photographer</mdb-nav-item>
+                        </router-link>
                         <mdb-nav-item href="#" waves-fixed>Find my photos</mdb-nav-item>
                         <router-link class="log" to="/login">
                             <mdb-nav-item waves-fixed>Login</mdb-nav-item>

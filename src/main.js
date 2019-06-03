@@ -1,5 +1,7 @@
 import Vue from 'vue'
-//import 'mdbvue/build/css/mdb.css';
+import Vuetify from 'vuetify'
+import 'mdbvue/build/css/mdb.css';
+import 'vuetify/dist/vuetify.min.css'
 import App from './App.vue'
 import router from './router'
 import jQuery from 'jquery'
@@ -15,6 +17,7 @@ window.$ = $;
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue)
 Vue.use(VueSweetalert2);
+Vue.use(Vuetify);
 Vue.use(Tooltip, {
   delay: 500,
   placement: 'top',

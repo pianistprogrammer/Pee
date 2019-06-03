@@ -8,8 +8,8 @@ import Pricing from './views/Pricing.vue'
 import Faqs from './views/Faqs.vue'
 import MobileFaqs from './views/MobileFaqs.vue'
 import Community from './views/Community.vue'
-
-
+import JoinCommunity from './views/JoinCommunity.vue'
+import SearchPhotographers from './views/SearchPhotographer.vue'
 
 Vue.use(Router)
 
@@ -24,6 +24,11 @@ export default new Router({
       path: '/photographers',
       name: 'photographers',
       component: Photographers
+    },
+    {
+      path: '/photographers/search',
+      name: 'search-photographers',
+      component: SearchPhotographers
     },
     {
       path: '/login',
@@ -54,6 +59,11 @@ export default new Router({
       path: '/community',
       name: 'community',
       component: Community
+    },
+    {
+      path: '/community/join',
+      name: 'join-community',
+      component: JoinCommunity
     },
     {
       path: '/about',
