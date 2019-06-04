@@ -3,97 +3,80 @@
         <PHeader />
         <div class="container">
             <div class="row mt-15">
-
                 <div class="col-md-4">
-                    <div class="row">
-                        <div class="inner-addon right-addon">
-                            <i class="fa fa-search"></i>
-                            <input type="text" class="form-control" placeholder="Search" />
+                    <div class="container">
+                        <div class="">
+                            <div class="inner-addon right-addon">
+                                <i class="fa fa-search"></i>
+                                <input type="text" class="form-control" placeholder="Search" />
+                            </div>
+                        </div>
+
+                        <p class="p-title-category">
+                            Category Type
+                        </p>
+                        <div>
+                            <Searchcategory :name="category.name" v-for="(category, key) in Categories" :key="key" />
+                        </div>
+
+                        <p class="p-title-category">
+                            Photographer Type
+                        </p>
+                        <div>
+                            <Searchtype :name="type.name" v-for="(type, id) in Types" :key="id" />
+                        </div>
+
+                        <p class="p-title-category">
+                            Bases Region
+                        </p>
+                        <h6>Seperate with a comma</h6>
+                        <p class="p-title-category">
+                            Price
+                        </p>
+                        <RangeSlider />
+                        <p class="p-title-category">
+                            Availability
+                        </p>
+                        <v-layout wrap>
+                            <v-flex sm6 md6>
+                                <v-menu v-model="menu2" :close-on-content-click="false" :nudge-right="40" lazy
+                                    transition="scale-transition" offset-y full-width>
+                                    <template v-slot:activator="{ on }">
+                                        <v-text-field v-model="date" label="From" readonly v-on="on"></v-text-field>
+                                    </template>
+                                    <v-date-picker v-model="date" color="green lighten-1" @input="menu2 = false">
+                                    </v-date-picker>
+                                </v-menu>
+                            </v-flex>
+                            <v-flex sm6 md6>
+                                <v-menu v-model="menu2" :close-on-content-click="false" :nudge-right="40" lazy
+                                    transition="scale-transition" offset-y full-width>
+                                    <template v-slot:activator="{ on }">
+                                        <v-text-field v-model="date" label="To" readonly v-on="on"></v-text-field>
+                                    </template>
+                                    <v-date-picker v-model="date" color="green lighten-1" @input="menu2 = false">
+                                    </v-date-picker>
+                                </v-menu>
+                            </v-flex>
+                        </v-layout>
+                        <div class="advert">
+                            <img src="../assets/images/app-screen-mockup.png" alt="peexoo apps">
+                            <p class="text-white">
+                                    DON’T MISS OUT!
+                                    DOWNLOAD OUR MOBILE APP
+                                    FOR A FULL MOBILE
+                                    EXPERIENCE
+                            </p>
+                            <div class="pad-top-30 text-center">
+                                    <div>
+                                      <img style="width:70%" src="../assets/images/ww_app-store.png" alt="download from app store">
+                                    </div>
+                                    <div>
+                                      <img style="width:78%" src="../assets/images/google-play.png" alt="download from google store">
+                                    </div>
+                            </div>
                         </div>
                     </div>
-
-                    <p class="p-title-category">
-                        Category Type
-                    </p>
-                    <div>
-                        <Searchcategory :name="category.name" v-for="(category, key) in Categories" :key="key" />
-                    </div>
-
-                    <p class="p-title-category">
-                        Photographer Type
-                    </p>
-                    <div>
-                        <Searchtype :name="type.name" v-for="(type, id) in Types" :key="id" />
-                    </div>
-
-                    <p class="p-title-category">
-                        Bases Region
-                    </p>
-                    <h6>Seperate with a comma</h6>
-                    <p class="p-title-category">
-                        Price
-                    </p>
-                    <v-flex
-        shrink
-        style="width: 60px"
-      >
-        <v-text-field
-          v-model="price[1]"
-          class="mt-0"
-          hide-details
-          single-line
-          type="number"
-        ></v-text-field>
-      </v-flex>
-                    <p class="p-title-category">
-                        Availability
-                    </p>
-                    <v-layout row wrap>
-                        <v-flex sm6 md4>
-                            <v-menu
-                              v-model="menu2"
-                              :close-on-content-click="false"
-                              :nudge-right="40"
-                              lazy
-                              transition="scale-transition"
-                              offset-y
-                              full-width
-                            >
-                              <template v-slot:activator="{ on }">
-                                <v-text-field
-                                  v-model="date"
-                                  label="From"
-                                  readonly
-                                  v-on="on"
-                                ></v-text-field>
-                              </template>
-                              <v-date-picker v-model="date" color="green lighten-1" @input="menu2 = false"></v-date-picker>
-                            </v-menu>
-                          </v-flex>
-                          <v-flex sm6 md4>
-                            <v-menu
-                              v-model="menu2"
-                              :close-on-content-click="false"
-                              :nudge-right="40"
-                              lazy
-                              transition="scale-transition"
-                              offset-y
-                              full-width
-                              
-                            >
-                              <template v-slot:activator="{ on }">
-                                <v-text-field
-                                  v-model="date"
-                                  label="To"
-                                   
-                                  readonly
-                                  v-on="on"
-                                ></v-text-field>
-                              </template>
-                              <v-date-picker v-model="date" color="green lighten-1" @input="menu2 = false"></v-date-picker>
-                            </v-menu>
-                          </v-flex>
-                    </v-layout>    
                 </div>
                 <div class="col-md-8">
                     <h4>320 Photograhers found</h4>
@@ -106,6 +89,8 @@
                 </div>
             </div>
         </div>
+        <Footer/>
+        <Menu/>
     </div>
 
 
@@ -117,7 +102,8 @@
     import Cardlist from '../components/card-list'
     import Searchcategory from '../components/search-category'
     import Searchtype from '../components/search-type'
-     
+    import RangeSlider from '../components/range-slider'
+
 
     export default {
 
@@ -128,15 +114,13 @@
             Cardlist,
             Searchcategory,
             Searchtype,
-            
+            RangeSlider
+
         },
         data: function () {
             return {
                 date: new Date().toISOString().substr(0, 10),
                 menu2: false,
-                slider: 45,
-                volume: 10,
-                price: [110, 440],
                 Photographers: [
                     {
                         id: 1,
@@ -155,6 +139,26 @@
                     },
                     {
                         id: 4,
+                        username: 'dbashdjbfajhsdfj hasdjf',
+                        desc: 'There is a reason that I am called the god of photographer. I shoot the invicible and…',
+                    },
+                    {
+                        id: 5,
+                        username: 'Wale Tinubu',
+                        desc: 'There is a reason that I am called the god of photographer. I shoot the invicible and',
+                    },
+                    {
+                        id: 6,
+                        username: 'dbashdjbfajhsdfj hasdjf',
+                        desc: 'There is a reason that I am called the god of photographer. I shoot the invicible and…',
+                    },
+                    {
+                        id: 7,
+                        username: 'Wale Tinubu',
+                        desc: 'There is a reason that I am called the god of photographer. I shoot the invicible and',
+                    },
+                    {
+                        id: 8,
                         username: 'dbashdjbfajhsdfj hasdjf',
                         desc: 'There is a reason that I am called the god of photographer. I shoot the invicible and…',
                     }
@@ -192,6 +196,25 @@
     }
 </script>
 <style scoped>
+    .advert{
+        padding: 20px;
+        margin-top:20px;
+        width: 97%;
+        height: 700px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #ffb400 43%, #ffb503), linear-gradient(to bottom, #ffb503, #ffb503);
+    }
+    .advert p{
+        font-family: Lora;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-top:20px
+    }
     .p-title-category {
         font-family: 'Montserrat';
         font-size: 18px;

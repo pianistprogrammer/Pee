@@ -9,8 +9,8 @@
                 </p>
             </div>
             <div class="row body-div">
-                <div class="col-md-3">
-                    <ul class="side-list">
+                <div class="col-md-2">
+                    <ul class="mg-top">
                         <a href="#">
                             <li v-on:click="billing" class="list-group-item">Billing</li>
                         </a>
@@ -283,6 +283,9 @@
     }
 </script>
 <style scoped>
+.card{
+    box-shadow: none !important;
+}
     @media screen and (max-width: 560px) {
         .for-mobile {
             display: block !important

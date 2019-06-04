@@ -22,7 +22,9 @@
                                     <h4 class="widget-title">Company</h4>
                                     <ul class="xs-list">
                                         <li><a href="#">About Us</a></li>
-                                        <li><a href="#">FAQs</a></li>
+                                        <li>
+                                             <router-link to="/faqs">FAQs</router-link>
+                                        </li>
                                         <li><a href="#">Pricing</a></li>
                                         <li><a href="#">Careers</a></li>
                                         <li><a href="#">Help & Support</a></li>

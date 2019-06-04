@@ -6,7 +6,9 @@
        <Appslider/>
       </div>
       <p class="text-center">
-        KELECHI AMADI OBI
+        <span id="title-banner">
+          KELECHI AMADI OBI 
+        </span>
       </p>
     </section><!-- end agency banner section -->
     <section class="xs-section-padding">
