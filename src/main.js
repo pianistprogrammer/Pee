@@ -45,6 +45,7 @@ import './assets/js/scrollax.js'
 import './assets/js/delighters.js'
 import './assets/js/jquery.parallax.js'
 import './assets/js/skrollr.min.js'
+import './assets/js/kenburns.js'
 import './assets/js/main.js'
  
 

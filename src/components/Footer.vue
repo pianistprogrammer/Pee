@@ -88,6 +88,6 @@
 
 <style scoped>
 .xs-list li{
-    font-size: 0.8125rem;
+    font-size: 1rem;
 }
 </style>

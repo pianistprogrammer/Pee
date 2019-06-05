@@ -5,7 +5,7 @@
       <div class="banner-slider-area">
        <Appslider/>
       </div>
-      <p class="text-center">
+      <p class="text-left ml-5">
         <span id="title-banner">
           KELECHI AMADI OBI 
         </span>

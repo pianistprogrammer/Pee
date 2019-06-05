@@ -1,11 +1,8 @@
 <template>
     <div class="">
-        <mdb-carousel :interval="8000">
-            <mdb-carousel-item  v-for="(img, key) in images" :key="key" 
-                img :src='img.url' mask="black-light" :alt='img.alt'>
-            </mdb-carousel-item>
-        </mdb-carousel>
-        
+        <canvas id="kenburns"  style="display: inline;">
+            <p>Your browser doesn't support canvas!</p>
+        </canvas>
     </div>
 </template>
 <script>
@@ -15,81 +12,65 @@
         data: function () {
             return {
                 images: [
-                    {
-                        url: "https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg",
-                        alt: "First Slide"
-                    },
-                    {
-                        url: "https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg",
-                        alt: "Second Slide"
-                    },
-                    {
-                        url: "https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg",
-                        alt: "Third Slide"
-                    }
+                        'http://www.kelechiamadiobi.com/wp-content/uploads/2015/06/slider-4.jpg',
+                        'https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg',
+                        'https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg'   
                 ],
                 currentNumber: 0,
                 timer: null
             }
         },
         mounted: function () {
-            //this.startRotation();
+                var $canvas = jQuery('#kenburns');
+                $canvas.attr('width', jQuery(window).width());
+                $canvas.attr('height', jQuery(window).height());
+
+                var kb = $canvas.kenburned({
+                    images: this.images,
+                    frames_per_second: 100,
+                    display_time: 7000,
+                    zoom: 1.2,
+                    fade_time: 1000,
+                });
+
+                jQuery(window).resize(function () {
+                    jQuery('#kenburns').remove();
+                    jQuery('#kenburns_overlay').remove();
+
+                    jQuery('body #wrapper').append('<canvas id="kenburns"></canvas>');
+                    jQuery('body #wrapper').append('<div id="kenburns_overlay"></div>');
+
+                    var $canvas = jQuery('#kenburns');
+
+                    $canvas.attr('width', jQuery(window).width());
+                    $canvas.attr('height', jQuery(window).height());
+
+                    var kb = $canvas.kenburned({
+                        images: this.images,
+                        frames_per_second: 100,
+                        display_time: 7000,
+                        zoom: 1.2,
+                        fade_time: 1000,
+                    });
+                });
         },
-        components:{
-            mdbCarousel,
-            mdbCarouselItem,
-            mdbCarouselCaption
+        components: {
+            
         },
         methods: {
-             
-        },
-         
         // created(){
-        //     // axios.get('https://jsonplaceholder.typicode.com/photos?_limit=5')
-        //     //     .then(res => res.data.forEach((img) => {
-        //     //         this.images.push(img.url)})
-        //     //     )
-        //     //     .catch(err => console.log(err))
-        // }
+                //     // axios.get('https://jsonplaceholder.typicode.com/photos?_limit=5')
+                //     //     .then(res => res.data.forEach((img) => {
+                //     //         this.images.push(img.url)})
+                //     //     )
+                //     //     .catch(err => console.log(err))
+                // }
+        },
+
+       
     }
 </script>
 <style scoped>
-    /* .fade-enter-active,
-    .fade-leave-active {
-        transition: all 0.5s ease;
-        overflow: hidden;
-        visibility: visible;
-        opacity: 1;
-        position: fixed;
-    }
-
-    .fade-enter,
-    .fade-leave-to {
-        opacity: 0;
-        visibility: hidden;
-    } */
-
-    .slide-fade-enter-active {
-        transition: all 0.1s ease;
-        position: fixed;
-        
-    }
-
-    .slide-fade-leave-active {
-        transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-    }
-
-    .slide-fade-enter,
-    .slide-fade-leave-to
-
-    /* .slide-fade-leave-active below version 2.1.8 */
-        {
-        transform: translateX(10px);
-        opacity: 0;
-        
-
-    }
-
     .im {
         width: 100%;
     }

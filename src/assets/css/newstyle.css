@@ -2,6 +2,9 @@
 .v-text-field>.v-input__control>.v-input__slot:before{
     border-style: none !important;
 }
+.form-check-label{
+    color: #4d4d4d !important;
+}
 .v-slider__thumb-container .primary--peexo {
     color: #ffb503 !important;
     caret-color: #ffb503 !important;
@@ -130,6 +133,8 @@ padding: 0px 0px 0px 25px;
     background-color: #ffb503;
     font-weight: 500 !important;
     box-shadow: none;
+    border-radius: 25px !important;
+    padding: 0 40px !important;
 }
 .black-header {
     height: 300px;
@@ -176,13 +181,14 @@ padding: 0px 0px 0px 25px;
     letter-spacing: normal;
     text-align: center;
     color: #4d4d4d;
+    font-size: 1.375rem !important;
 }
 .carousel-indicators{
     bottom: -51px !important
 }
 .prev-bt{
     position: absolute;
-    top: 272pt;
+    top: 231pt;
     z-index: 15;
     left: 46.7%;
     height: 10px;
@@ -190,7 +196,7 @@ padding: 0px 0px 0px 25px;
 }
 .next-bt{
     position: absolute;
-    top: 272pt;
+    top: 232pt;
     z-index: 15;
     left: 52.5%;
     height: 10px;
@@ -231,14 +237,14 @@ padding: 0px 0px 0px 25px;
 }
 .users-say{
     font-family: Lora;
-  font-size: 40px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffb503;
+    font-size: 3rem !important;
+    font-weight: bold !important;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffb503 !important;
 }
 .show-special{
     font-weight: 600;
@@ -283,7 +289,7 @@ padding: 0px 0px 0px 25px;
   background-color: #ffffff;
 }
 .user-box p{
-    padding: 30px;
+    padding: 30px 30px 5px 30px;
     font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -293,7 +299,7 @@ padding: 0px 0px 0px 25px;
   color: #4d4d4d;
 }
 .user-box-details{
- padding: 0 0px 30px 30px;
+ padding: 0 0 0 30px;
 }
 .user-box-details span{
     font-weight: 600;

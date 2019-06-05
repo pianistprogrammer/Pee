@@ -37,7 +37,7 @@
 
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                    <a href="#" class="" data-toggle="collapse" data-target="#collapseOne"
+                                    <a href="#" class="expand-text" data-toggle="collapse" data-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
                                         Collapsible Group Item #1 <i class="fa fa-angle-down rotate-icon"></i>
                                     </a>
@@ -334,7 +334,10 @@
     .for-mobile {
         display: none
     }
-
+    .mb-0 a.collapsed{
+        color: #474747 !important;
+    }
+     
     .body-div {
         margin-bottom: 200px
     }
@@ -404,9 +407,10 @@
         font-family: 'Montserrat'
     }
     .mb-0 {
-        border-bottom: 1px solid;
+        border-bottom: solid 0.5px #979797;
         padding-bottom: 25px;
     }
+    
     .card .card-header a:not(.collapsed) .rotate-icon {
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);

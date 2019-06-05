@@ -5,7 +5,7 @@
       <div class="banner-slider-area">
        <Appslider/>
       </div>
-      <p class="text-center">
+      <p class="text-left ml-5">
         <span id="title-banner">
           KELECHI AMADI OBI 
         </span>
@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <div class="agency-section-title text-center section-title-style2">
-                        <h2 class="main-title" style="color:#ffb503">How it works</h2>
+                        <h2 class="main-title  users-say" style="color:#ffb503">How it works</h2>
 
                     </div>
                 </div>
