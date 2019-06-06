@@ -6,23 +6,22 @@
             <!-- Grid column -->
                 <div class="col-md-3 mr-10">
                     <div class="">
-                        <img class="img-fluid" style="" src="../assets/images/left.png" alt="Card image cap">
+                        <img style="width:100%" class="img-fluid" src="../assets/images/left.png" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-md-3 mr-10">
                     <div class="">
-                         <img class="img-fluid mb-6" style="" src="../assets/images/middle-top.png" alt="Card image cap">
-                        <img class="img-fluid" src="../assets/images/middle-bottom.png" alt="Card image cap"
-                        style="">
+                         <img style="width:100%" class="img-fluid mb-6" src="../assets/images/middle-top.png" alt="Card image cap">
+                        <img style="width:100%" class="img-fluid" src="../assets/images/middle-bottom.png" alt="Card image cap">
                     </div>
                    
                 </div>
                 <div class="col-md-5 mr-10 ">
                      <div class="">
-                        <img class="img-fluid mb-6" src="../assets/images/right-top.png" alt="Card image cap"
-                        style="object-fit:contain">
+                        <img  class="img-fluid mb-6" src="../assets/images/right-top.png" alt="Card image cap"
+                        style="object-fit:contain;width:100%">
                         <img class="img-fluid" src="../assets/images/right-bottom.png" alt="Card image cap"
-                        style="object-fit:contain;">
+                        style="object-fit:contain;width:100%">
                     </div>
                 </div>
         </div>

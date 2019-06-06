@@ -25,7 +25,9 @@
                                         <li>
                                              <router-link to="/faqs">FAQs</router-link>
                                         </li>
-                                        <li><a href="#">Pricing</a></li>
+                                        <li>
+                                            <router-link to="/pricing">Pricing</router-link>
+                                        </li>
                                         <li><a href="#">Careers</a></li>
                                         <li><a href="#">Help & Support</a></li>
                                         <li><a href="#">Terms of Service</a></li>
