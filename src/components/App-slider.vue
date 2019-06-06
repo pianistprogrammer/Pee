@@ -1,13 +1,10 @@
 <template>
-    <div class="">
-        <canvas id="kenburns"  style="display: inline;">
-            <p>Your browser doesn't support canvas!</p>
-        </canvas>
-    </div>
+    <canvas id="kenburns">
+        <p>Your browser doesn't support canvas!</p>
+    </canvas>
 </template>
 <script>
     import axios from 'axios'
-    import { mdbCarousel, mdbCarouselItem, mdbCarouselCaption } from 'mdbvue';
     export default {
         data: function () {
             return {
@@ -16,7 +13,7 @@
                         'https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg',
                         'https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg'   
                 ],
-                currentNumber: 0,
+                
                 timer: null
             }
         },
@@ -25,33 +22,12 @@
                 $canvas.attr('width', jQuery(window).width());
                 $canvas.attr('height', jQuery(window).height());
 
-                var kb = $canvas.kenburned({
+                $canvas.kenburned({
                     images: this.images,
                     frames_per_second: 100,
                     display_time: 7000,
                     zoom: 1.2,
                     fade_time: 1000,
-                });
-
-                jQuery(window).resize(function () {
-                    jQuery('#kenburns').remove();
-                    jQuery('#kenburns_overlay').remove();
-
-                    jQuery('body #wrapper').append('<canvas id="kenburns"></canvas>');
-                    jQuery('body #wrapper').append('<div id="kenburns_overlay"></div>');
-
-                    var $canvas = jQuery('#kenburns');
-
-                    $canvas.attr('width', jQuery(window).width());
-                    $canvas.attr('height', jQuery(window).height());
-
-                    var kb = $canvas.kenburned({
-                        images: this.images,
-                        frames_per_second: 100,
-                        display_time: 7000,
-                        zoom: 1.2,
-                        fade_time: 1000,
-                    });
                 });
         },
         components: {

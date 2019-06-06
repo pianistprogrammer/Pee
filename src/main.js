@@ -43,9 +43,9 @@ import './assets/js/jquery.magnific-popup.min.js'
 import './assets/js/owl.carousel.min.js'
 import './assets/js/scrollax.js'
 import './assets/js/delighters.js'
+import './assets/js/kenburns.js'
 import './assets/js/jquery.parallax.js'
 import './assets/js/skrollr.min.js'
-import './assets/js/kenburns.js'
 import './assets/js/main.js'
  
 

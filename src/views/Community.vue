@@ -2,50 +2,29 @@
     <div>
         <PHeader />
         <CommunityHeader/>
-        <div class="gallery mt-3" id="gallery">
+        <div class="mt-10 row ml-mr" id="">
             <!-- Grid column -->
-
-            <transition @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave">
-                <div class="mg-b pics all 2 animation" style="">
-                    <img class="img-fluid" style="width:100%" src="../assets/images/left.png" alt="Card image cap">
+                <div class="col-md-3 mr-10">
+                    <div class="">
+                        <img class="img-fluid" style="" src="../assets/images/left.png" alt="Card image cap">
+                    </div>
                 </div>
-            </transition>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <transition @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave">
-                <div class="mg-b pics all 1 animation" style="">
-                    <img class="img-fluid" style="width:100%" src="../assets/images/middle-top.png" alt="Card image cap">
+                <div class="col-md-3 mr-10">
+                    <div class="">
+                         <img class="img-fluid mb-6" style="" src="../assets/images/middle-top.png" alt="Card image cap">
+                        <img class="img-fluid" src="../assets/images/middle-bottom.png" alt="Card image cap"
+                        style="">
+                    </div>
+                   
                 </div>
-            </transition>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <transition @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave">
-                <div class="mg-b pics all 1 animation" style="">
-                    <img class="img-fluid" src="../assets/images/middle-bottom.png" alt="Card image cap"
-                        style="height: 313px;width:100%">
+                <div class="col-md-5 mr-10 ">
+                     <div class="">
+                        <img class="img-fluid mb-6" src="../assets/images/right-top.png" alt="Card image cap"
+                        style="object-fit:contain">
+                        <img class="img-fluid" src="../assets/images/right-bottom.png" alt="Card image cap"
+                        style="object-fit:contain;">
+                    </div>
                 </div>
-            </transition>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <transition @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave">
-                <div class="mg-b pics all 2 animation" style="">
-                    <img class="img-fluid" src="../assets/images/right-top.png" alt="Card image cap"
-                        style="height: 418px;width:100%;object-fit:cover">
-                </div>
-            </transition>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <transition @enter="enter" @after-enter="afterEnter" @before-leave="beforeLeave">
-                <div class="mg-b pics all 2 animation" style="">
-                    <img class="img-fluid" src="../assets/images/right-bottom.png" alt="Card image cap"
-                        style="height: 213px;object-fit:cover;width:100%">
-                </div>
-            </transition>
-
         </div>
         <div id="mobile-gallery" class="">
             <div class="col-6">
@@ -334,6 +313,22 @@
     }
 </script>
 <style scoped>
+    .col-md-3, .col-md-5, .row{
+        padding-right: 0px !important;
+        padding-left: 0px !important
+    }
+    .col-md-3{
+        flex: 0 0 28% !important;
+        max-width: 28% !important;
+    }
+    .col-md-5{
+        flex: 0 0 39.92% !important;
+        max-width: 39.92% !important;
+    }
+    .ml-mr{
+        margin-left: 10px;
+        
+    }
     .how-works {
         margin-top: 100px
     }
@@ -390,18 +385,20 @@
         color: #4d4d4d;
     }
 
-    .mt-3 {
-        margin-top: 10px
+    .mt-10 {
+        margin-top: 10px !important
     }
 
     .mg-b {
         margin-bottom: 11px !important;
     }
-
-    #gallery {
-        padding-left: 15px;
-        padding-right: 15px;
+    .mb-6 {
+        margin-bottom: 6px !important;
     }
+    .mr-10{
+        margin-right: 12px !important
+    }
+     
 
     .gallery {
         -webkit-column-count: 3;

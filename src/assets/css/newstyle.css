@@ -232,6 +232,10 @@ padding: 0px 0px 0px 25px;
     display: none;
     
 }
+.p-slider{
+    text-align: left !important;
+    margin-left: 3rem;
+}
 .banner-area-wraper > p {
     z-index: 1000 !important;
 }

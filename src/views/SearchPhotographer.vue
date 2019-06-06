@@ -30,7 +30,6 @@
                             Bases Region
                         </p>
                         <h6>Seperate with a comma</h6>
-                        
                         <p class="p-title-category">
                             Price
                         </p>

@@ -1236,6 +1236,10 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
         position: relative;
         margin-top: 30px;
     }
+    .p-slider{
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
     .users-say{
         font-size:26px
     }
@@ -1251,6 +1255,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
     }
     .mobile-head{
         display: flex;
+        background: #fff !important;
     }
     .banner-slider-area{
         margin-top: -30px;

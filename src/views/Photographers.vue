@@ -45,7 +45,6 @@
                         <div class="col-md-6 col-lg-3 col-6">
                             <div class="circle circle-black text-center">
                                 <div>
-
                                     Register
                                 </div>
                             </div>
