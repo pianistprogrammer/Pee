@@ -7,7 +7,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <i class="fa fa-times close-btn" @click="close"></i>
-                        <div class="row">
+                        <div class="row"  >
                             <div class="col-md-12">
                                 <div>
                                     <!-- Nav tabs -->
@@ -150,12 +150,14 @@
             }
         },
         mounted: function () {
-            document.addEventListener("keydown", (e) => {
-                console.log('i pressed outside')
-                if (this.showloginModal && e.keyCode == 27) {
-                    this.close();
-                }
-            });
+            // console.log('first time component :' + this.show)
+            // //console.log('After click :' + this.show)
+            // document.addEventListener("keydown", (e) => {
+            //     if (this.showloginModal && e.keyCode == 27) {
+            //         this.close();
+            //     }
+            // });
+            
         },
         methods: {
             close: function () {

@@ -70,6 +70,7 @@
     import LoginRegister from './login-register'
     import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler,mdbNavbarBrand } from 'mdbvue';
     export default {
+        props: ['show'],
         data: function () {
             return {
                 showloginModal:false,
@@ -84,8 +85,18 @@
             mdbNavbarToggler,
             mdbNavbarBrand
         },
-        methods:{
+        // updated: function () {
+        //     document.addEventListener("keydown", (e) => {
+        //         if (this.showloginModal && e.keyCode == 27) {
+        //             this.close();
+        //         }
+        //     });
             
+        // },
+        methods:{
+            // close: function () {
+            //     this.showloginModal = false;
+            // },
         }
 
     }
