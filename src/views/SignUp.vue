@@ -8,22 +8,14 @@
                 </p>
 
             </div>
-            <div class="field-wrapper">
-                <input type="text" name="email" id="" v-model="registerForm.first_name">
-                <div class="field-placeholder"><span>First Name</span></div>
-            </div>
-            <div class="field-wrapper">
-                <input type="text" name="password" id="" v-model="registerForm.last_name">
-                <div class="field-placeholder"><span>Last Name</span></div>
-            </div>
-            <div class="field-wrapper">
-                <input type="email" name="email" id="" v-model="registerForm.email">
-                <div class="field-placeholder"><span>Email</span></div>
-            </div>
-            <div class="field-wrapper">
-                <input type="password" name="password" id="" v-model="registerForm.password">
-                <div class="field-placeholder"><span>Password</span></div>
-            </div>
+            <mdb-input type="text"  label="Enter your first name" outline v-model="registerForm.first_name"/>
+                           
+            <mdb-input  type="text"  label="Enter your last name" outline v-model="registerForm.last_name" />
+                        
+            <mdb-input type="email"  label="Enter your email" outline v-model="registerForm.email" />
+                                            
+            <mdb-input type="password"  label="Enter your password" outline v-model="registerForm.password" />
+             
             <div class="row">
                 <div class="col-md-12">
                     <div class="checkbox">

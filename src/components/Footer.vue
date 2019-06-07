@@ -88,6 +88,13 @@
     </footer>
 </template>
 
+<script>
+export default {
+   
+    
+}
+</script>
+
 <style scoped>
 .xs-list li{
     font-size: 1rem;

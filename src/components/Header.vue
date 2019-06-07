@@ -21,15 +21,12 @@
                                 <!-- Tab panes -->
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane active" id="signin">
-                                        <form class="form-m">
-                                            <div class="field-wrapper">
-                                                <input type="email" name="email" id="">
-                                                <div class="field-placeholder"><span>Enter your email</span></div>
-                                            </div>
-                                            <div class="field-wrapper">
-                                                <input type="password" name="password" id="">
-                                                <div class="field-placeholder"><span>Enter your password</span></div>
-                                            </div>
+                                        <form class="form-m" id="loginform" @submit.prevent="login">
+
+                                                <mdb-input type="email" name="email" label="Enter your email" outline />
+                                                
+                                                <mdb-input type="password" name="password" label="Enter your password" outline />
+                                             
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="checkbox">
@@ -66,23 +63,15 @@
                                         </form>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="signup">
-                                        <form class="form-m">
-                                            <div class="field-wrapper">
-                                                <input type="text" name="email" id="">
-                                                <div class="field-placeholder"><span>First Name</span></div>
-                                            </div>
-                                            <div class="field-wrapper">
-                                                <input type="text" name="password" id="">
-                                                <div class="field-placeholder"><span>Last Name</span></div>
-                                            </div>
-                                            <div class="field-wrapper">
-                                                <input type="email" name="email" id="">
-                                                <div class="field-placeholder"><span>Email</span></div>
-                                            </div>
-                                            <div class="field-wrapper">
-                                                <input type="password" name="password" id="">
-                                                <div class="field-placeholder"><span>Password</span></div>
-                                            </div>
+                                        <form class="form-m" id="registerform" @submit.prevent="submitForm">
+
+                                            <mdb-input type="text"  label="Enter your first name" outline />
+                           
+                                            <mdb-input  type="text"  label="Enter your last name" outline />
+                        
+                                            <mdb-input type="email"  label="Enter your email" outline />
+                                            
+                                            <mdb-input type="password"  label="Enter your password" outline />
 
                                             <div class="row">
                                                 <div class="col-md-12">
@@ -200,6 +189,18 @@
     export default {
         data: function () {
             return {
+                loginForm: {
+                    email: '',
+                    password: ''
+                },
+                registerForm: {
+                    email: '',
+                    password: '',
+                    // password_confirmation: '',
+                    first_name: '',
+                    last_name: '',
+                     
+                },
                 loading: true
             }
         },
@@ -214,6 +215,26 @@
             mdbNavbarBrand,
             mdbIcon
         },
+         methods: {
+            // login(e) {
+            //     axios.post('/api/auth/login', this.loginForm).then(response => {
+            //         localStorage.setItem('auth_token', response.data.token);
+            //         axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('auth_token');
+            //         toastr['success'](response.data.message);
+            //         this.$router.push('/home')
+            //     }).catch(error => {
+            //         toastr['error'](error.response.data.message);
+            //     });
+            // }
+            // submitForm(e) {
+            //     axios.post('/api/auth/register', this.registerForm).then(response => {
+            //         toastr['success'](response.data.message);
+            //         //this.$router.push('/user');
+            //     }).catch(error => {
+            //         toastr['error'](error.response.data.message);
+            //     });
+            // },
+        }
 
     }
 </script>

@@ -269,8 +269,7 @@
     import Menu from '../components/Menu'
     import PhotoTestimony from '../components/Photo-Testimony'
     import CommunityHeader from '../components/community-header'
-    import { mdbContainer, mdbRow, mdbCol, mdbIcon,mdbBtn, mdbLightbox, mdbCarousel, mdbCarouselCaption, mdbCard, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbNavItem } from "mdbvue";
- 
+  
 
     export default {
         name: "community",
@@ -279,34 +278,10 @@
             Footer,
             Menu,
             PhotoTestimony,
-            CommunityHeader,
-            mdbContainer,
-            mdbRow,
-            mdbCol,
-            mdbIcon,
-            mdbBtn,
-            mdbLightbox,
-            mdbCarousel,
-            mdbCarouselCaption,
-            mdbCard,
-            mdbModal,
-            mdbModalHeader,
-            mdbModalTitle,
-            mdbModalBody,
-            mdbModalFooter,
-            mdbNavItem,
-
+            CommunityHeader
         },
         methods: {
-            enter(el) {
-                el.style.opacity = 0;
-            },
-            afterEnter(el) {
-                el.style.opacity = 1;
-            },
-            beforeLeave(el) {
-                el.style.opacity = 0;
-            }
+             
         }
 
     }

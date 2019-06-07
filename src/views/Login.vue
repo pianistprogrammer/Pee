@@ -9,14 +9,10 @@
                 <a class="forget" href="">Forgot your password</a>
             </div>
 
-            <div class="field-wrapper">
-                <input type="email" name="email" id="" v-model="loginForm.email" >
-                <div class="field-placeholder"><span>Enter your email</span></div>
-            </div>
-            <div class="field-wrapper">
-                <input type="password" name="password" id="" v-model="loginForm.password">
-                <div class="field-placeholder"><span>Enter your password</span></div>
-            </div>
+            <mdb-input type="email" name="email" label="Enter your email" outline />
+            
+            <mdb-input type="password" name="password" label="Enter your password" outline />
+            
             <div class="row">
                 <div class="col-md-12">
                     <div class="checkbox">

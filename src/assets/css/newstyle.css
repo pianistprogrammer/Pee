@@ -98,8 +98,18 @@ padding: 0px 0px 0px 25px;
 .animated-icon1 span {
     background: #4d4d4d !important;
 }
+/* the end of material design tweaks */
+
+.block-container .field-wrap{
+    background-color: #fff !important;
+    margin: 10px !important;
+    color: #4d4d4d !important;
+    border-radius: 5px;
+    border: solid 1px #979797 !important;
+    text-align: center !important;
+}
 .form-m {
-    margin-top: 25px;
+     
     padding: 50px 16px;
     background: #fefbf3;
 }
@@ -110,16 +120,16 @@ padding: 0px 0px 0px 25px;
  #navbarSupportedContent{
     float:left !important
 }
-.md-form.md-outline input[type=text],.md-form.md-outline input[type=email],.md-form.md-outline input[type=number],
+.md-form.md-outline input[type=password],.md-form.md-outline input[type=text],.md-form.md-outline input[type=email],.md-form.md-outline input[type=number],
 .md-form.md-outline textarea{
     background: #fff !important
 }
-.md-form.md-outline input[type=text]:focus:not([readonly])+label, .md-form.md-outline input[type=email]:focus:not([readonly])+label,
+.md-form.md-outline input[type=password]:focus:not([readonly])+label,.md-form.md-outline input[type=text]:focus:not([readonly])+label, .md-form.md-outline input[type=email]:focus:not([readonly])+label,
 .md-form.md-outline input[type=number]:focus:not([readonly])+label, .md-form.md-outline textarea+label
 {
     color: #ffa400 !important;
 }
-.md-form.md-outline input[type=text]:focus:not([readonly]), .md-form.md-outline input[type=email]:focus:not([readonly]),
+.md-form.md-outline input[type=password]:focus:not([readonly]),.md-form.md-outline input[type=text]:focus:not([readonly]), .md-form.md-outline input[type=email]:focus:not([readonly]),
 .md-form.md-outline input[type=number]:focus:not([readonly]), .md-form.md-outline textarea:focus{
     border-color:#ffa400!important;
     border-bottom:1px solid #ffa400 !important;
