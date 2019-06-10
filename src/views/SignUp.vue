@@ -56,10 +56,12 @@
 </template>
 <script>
     import PHeader from '../components/PHeader'
+    import { mdbInput } from 'mdbvue';
     export default {
         name: "home",
         components: {
-            PHeader
+            PHeader,
+            mdbInput
         },
          data() {
             return {

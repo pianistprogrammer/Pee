@@ -17,29 +17,21 @@
     </mdb-row>
 </template>
 <script>
-    import { mdbContainer, mdbRow, mdbCol, mdbCard, mdbCardImage, mdbCardHeader, mdbCardBody, mdbCardTitle, mdbCardText, mdbCardFooter, mdbCardUp, mdbCardAvatar, mdbCardGroup, mdbBtn, mdbView, mdbMask, mdbIcon } from 'mdbvue';
+    import {mdbRow, mdbCol, mdbCard, mdbCardImage,mdbCardBody, mdbCardTitle, mdbCardText,mdbView, mdbMask } from 'mdbvue';
 
     export default {
         name: 'card-list',
         props: ['username', 'desc'],
         components: {
-            mdbContainer,
             mdbRow,
             mdbCol,
             mdbCard,
             mdbCardImage,
-            mdbCardHeader,
             mdbCardBody,
             mdbCardTitle,
             mdbCardText,
-            mdbCardFooter,
-            mdbCardUp,
-            mdbCardAvatar,
-            mdbCardGroup,
-            mdbBtn,
             mdbView,
-            mdbMask,
-            mdbIcon
+            mdbMask
         }
     }
 </script>

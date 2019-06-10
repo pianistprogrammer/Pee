@@ -5,23 +5,11 @@
 </template>
 
 <script>
-  import Header from './components/Header'
-  import Booking from './components/Booking'
-  import Testimony from './components/Testimony'
-  import Footer from './components/Footer'
-  import Menu from './components/Menu'
-  import Appslider from './components/App-slider'
+ 
  
   export default {
     name: "app",
     components: {
-      Header,
-      Booking,
-      Testimony,
-      Footer,
-      Menu,
-      Appslider,
-       
     }
    
 }
