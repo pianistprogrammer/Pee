@@ -64,7 +64,7 @@
                     <span> <img src="../assets/images/icons/camera-portrait-mode.svg" alt=""> Portrait</span>
                     <span> <img src="../assets/images/icons/dress-long-and-black-shape.svg" alt=""> Fashion</span>
                     <span> <img src="../assets/images/icons/icons-8-bottom-90.jpg" alt=""> Nude Art</span>
-                    <span> <img src="../assets/images/icons/camera-portrait-mode.svg" alt=""> Sport</span>
+                    <span> <img src="../assets/images/icons/swimming-figure.svg" alt=""> Sport</span>
                 </div>
             </div>
             <p class="text-center img-head-title">
@@ -77,8 +77,35 @@
             </div>
             <div class="text-center">
                 <button class="btn btn-p btn-rounded btn-peexoo btn-another-peexo">Book Now</button>
+                <h2 class="big-title mt-5">
+                    Availability
+                </h2>
+                <!-- <calender-slider></calender-slider> -->
+
             </div>
+
+            <div class="text-center review-header">
+                <h2 class="big-title mt-5">
+                    Review
+                </h2>
+                <h6>
+                    999 Reviews
+                </h6>
+                <p>
+                    <i class="fa peexo-body-text fa-star"></i> <i class="fa peexo-body-text fa-star"></i> <i
+                        class="fa peexo-body-text fa-star"></i> <i class="fa peexo-body-text fa-star"></i> <i
+                        class="fa peexo-body-text fa-star"></i>
+                </p>
+            </div>
+            <div class="row" v-for="(rev, key) in reviews" :key="key">
+                <review :photoname="rev.photoname" :date="rev.date" :img="rev.imgurl" :revbody="rev.text"></review>
+            </div>
+            <p class="text-center view-all">
+                View all reviews
+            </p>
         </div>
+        <Footer />
+        <Menu />
     </div>
 </template>
 <script>
@@ -86,13 +113,17 @@
     import Footer from '../components/Footer'
     import Menu from '../components/Menu'
     import Portfolio from '../components/Gallery-portfolio'
+    import Review from '../components/Reviews'
+    import CalenderSlider from '../components/calendar-slider'
     export default {
         name: "photographer-page",
         components: {
             PHeader,
             Footer,
             Menu,
-            Portfolio
+            Portfolio,
+            Review,
+            CalenderSlider
         },
         data: function () {
             return {
@@ -122,11 +153,63 @@
                         url: "images/bottom-fourth.png",
                     }
                 ],
+                reviews: [
+                    {
+                        imgurl: "images/bitmap.png",
+                        photoname: 'Jonathan Edward',
+                        date: "19th May, 2018",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        imgurl: "images/bitmap.png",
+                        photoname: 'Jonathan Onyechi',
+                        date: "19th May, 2019",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        imgurl: "images/bitmap.png",
+                        photoname: 'Jonathan Adefola',
+                        date: "19th May, 2019",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        imgurl: "images/bitmap.png",
+                        photoname: 'Jonathan Afesola',
+                        date: "19th May, 2019",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    },
+                    {
+                        imgurl: "images/bitmap.png",
+                        photoname: 'Jonathan Edward',
+                        date: "19th May, 2018",
+                        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    }
+                ]
             }
         }
     }
 </script>
 <style scoped>
+    .view-all {
+        font-family: 'Montserrat' !important;
+        font-size: 18px;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        color: #b58000 !important;
+    }
+
+    .review-header {
+        margin-bottom: 66px
+    }
+
+    .review-header h6 {
+        font-size: 18px !important;
+        font-weight: 400;
+        text-align: center;
+        color: #4d4d4d;
+    }
+
     .img-head-title {
         font-family: Lora !important;
         font-size: 38px;
@@ -153,10 +236,12 @@
         margin-top: 30px !important;
         float: right;
     }
+
     .btn-another-peexo {
         color: #ffffff !important;
         margin-top: 56px !important;
     }
+
     #desc {
         color: #4d4d4d !important;
     }

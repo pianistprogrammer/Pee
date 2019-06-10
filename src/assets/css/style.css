@@ -12,7 +12,16 @@ body {
     color: #999999;
     background: #fefbf3;
 }
-
+.peexo-body-text{
+    color: #4d4d4d !important
+}
+.big-title{
+    font-family: Lora !important;
+    font-size: 38px !important;
+    font-weight: bold;
+    text-align: center;
+    color: #4d4d4d !important;
+}
 iframe {
     border: none
 }
