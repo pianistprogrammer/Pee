@@ -105,7 +105,40 @@ padding: 0px 0px 0px 25px;
     background: #4d4d4d !important;
 }
 /* the end of material design tweaks */
+/* the biegining of the calendar styling */
+.vc-grid-cell{
+    margin-right: 10px !important;
+    background: #fff !important;
+}
+.vc-day-content:focus {
+    background-color: #ffb400 !important;
+    color: #fff !important;
+}
+.vc-bg-blue-600 {
+    background-color: #ffb400 !important;
+}
+.vc-pane{
+    border-radius: 3px !important;
+    border: solid 1px #979797 !important;
+}
+.vc-weeks{
+    padding-top:20px !important
+}
+.vc-text-gray-800 {
+    color: #4d4d4d !important;
+    font-size: 16px !important;
+    font-weight: 400 !important
+}
+.vc-border{
+    border: none !important
+}
+.vc-container{
+    width: 100% !important;
+    background: transparent !important;
+    font-family: 'Montserrat' !important;
+    color: #4d4d4d !important;
 
+}
 .block-container .field-wrap{
     background-color: #fff !important;
     margin: 10px !important;

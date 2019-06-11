@@ -1,24 +1,25 @@
 <template>
-    <TRVLPicker
-        :checkin.sync="checkin"
-        :checkout.sync="checkout"
-        
-    />
+    <vc-calendar :attributes='attributes' :masks="{ title: 'MMMM', weekdays: 'WW' }" :columns="$screens({ default: 1, lg: 3 })" :rows="$screens({ default: 1, lg: 1 })"
+        :is-expanded="$screens({ default: true, lg: false })" />
 </template>
 
- <script>
- import TRVLPicker from '@trvl/picker'
- export default {
-     name:"calendar-slider",
-     components:{
-         TRVLPicker
-     },
-     data: function() {
+<script>
+    //import TRVLPicker from '@trvl/picker'
+    export default {
+        name: "calendar-slider",
+        components: {
+
+        },
+        data: function () {
             return {
-                checkin: new Date(2019, 2, 13),
-                checkout: new Date(2019, 2, 15),
+                attributes: [
+                    {
+                        key: 'today',
+                        highlight: true,
+                        dates: new Date()
+                    }
+                ]
             }
-    },
- }
- </script>
- 
+        },
+    }
+</script>

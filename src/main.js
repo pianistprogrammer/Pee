@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
+import VCalendar from 'v-calendar';
 import 'mdbvue/build/css/mdb.css';
 import 'vuetify/dist/vuetify.min.css'
 import App from './App.vue'
@@ -18,6 +19,10 @@ import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue)
 Vue.use(VueSweetalert2);
 Vue.use(Vuetify);
+Vue.use(VCalendar, {
+  componentPrefix: 'vc',  // Use <vc-calendar /> instead of <v-calendar />
+                // ...other defaults
+});
 Vue.use(Tooltip, {
   delay: 500,
   placement: 'top',

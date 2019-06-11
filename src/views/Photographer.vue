@@ -77,10 +77,13 @@
             </div>
             <div class="text-center">
                 <button class="btn btn-p btn-rounded btn-peexoo btn-another-peexo">Book Now</button>
-                <h2 class="big-title mt-5">
+                <h2 class="big-title mt-5 mb-5">
                     Availability
                 </h2>
-                <!-- <calender-slider></calender-slider> -->
+                <div class="">
+                     <calender-slider></calender-slider>
+                 </div>
+               
 
             </div>
 
@@ -235,11 +238,15 @@
         color: #ffffff !important;
         margin-top: 30px !important;
         float: right;
+        background-color: #ffb503 !important;
+        box-shadow: none !important;
     }
 
     .btn-another-peexo {
         color: #ffffff !important;
         margin-top: 56px !important;
+        background-color: #ffb503!important;
+        box-shadow: none !important
     }
 
     #desc {
