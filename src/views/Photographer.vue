@@ -251,6 +251,8 @@
 
     #desc {
         color: #4d4d4d !important;
+        line-height: 2.22;
+        font-size: 1.125rem !important;
     }
 
     .photo-name {
